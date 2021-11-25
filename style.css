@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 12000px;
+}
+/* header */
+.whole-header{
+    background-color: blue;
+    color: white;
+    position: sticky;
+    top: 0;
+    /* padding: 30px 0; */
+}
+.upper-header{
+    display: flex;
+    justify-content: space-between;
+}
+.upper-header > div{
+    padding:10px 20px ;
+}
+.bootstrap-navbar{
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: blue;
+}
+.bootstrap-nav-container{
+    box-shadow: 1px 7px 14px -6px black;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 1vh;
+    left: 6vw;
+}
+.navbar-light .navbar-toggler{
+    border-color: transparent;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+@media(max-width: 1200px){
+    .bootstrap-nav-container{
+        left: 0;
+        right: 0;
+        padding: 5px 3px;
+    }
+}
+
