@@ -4,23 +4,34 @@
     box-sizing: border-box;
 }
 
+:root{
+  --web-whole-color: #4bc8e1;  
+  --web-white-colore-code: white;
+  --faded-text-color: rgba(0,0,0,.55);
+  --box-shadow-head-feat:  0px 8px 24px -9px #666666;
+}
 body{
-    height: 12000px;
+    height: 1200px;
 }
 /* header */
 .whole-header{
-    background-color: blue;
-    color: white;
+    background-color: var(--web-whole-color);
+    color: var(--web-white-colore-code);
     position: sticky;
     top: 0;
-    /* padding: 30px 0; */
+    z-index: 99;
+    padding: 20px 0;
+}
+.header-right-content{
+    display: flex;
+    gap: 10px;
 }
 .upper-header{
     display: flex;
     justify-content: space-between;
 }
 .upper-header > div{
-    padding:10px 20px ;
+    padding:10px 0;
 }
 .bootstrap-navbar{
   /* text-align: center; */
@@ -28,20 +39,31 @@ body{
   justify-content: center;
   align-items: center;
 }
-.navbar-light .navbar-nav .nav-link.active{
-    color: blue;
+.navbar-light .navbar-nav .nav-item.active > .nav-link{
+    color: var(--web-white-colore-code);
+    background-color: var(--web-whole-color);
+}
+.nav-link{
+    /* padding: 2px 5px; */
+    padding-top: 1px ;
+    padding-bottom: 3px;
+    border-radius: 15px;
+}
+.nav-item{
+    padding: 0 10px;
 }
 .bootstrap-nav-container{
-    box-shadow: 1px 7px 14px -6px black;
-    border-radius: 10px;
-    background-color: white;
+    box-shadow:var(--box-shadow-head-feat);
+    border-radius: 6px;
+    background-color: var(--web-white-colore-code);
     position: absolute;
     top: 1vh;
-    left: 6vw;
+    left: 7vw;
+    padding: 15px 0;
 }
 .navbar-light .navbar-toggler{
     border-color: transparent;
-    color: white;
+    color: var(--web-white-colore-code);
     padding: 0;
     margin: 0;
 }
@@ -50,11 +72,41 @@ body{
     height: 1.5em;
 }
 
+/* background-img-container */
+.background-img-container{
+    min-height: 70vh;
+}
+.background-img-container::before{
+    content: "";
+    top: 2vh;
+    left: 0;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    background: url("img/360_F_336350271_1n4MQ7DyeWvjwxC392W9APWryml59Hq1.jpg") no-repeat center center/cover;
+}
+
+/* FEATURES  */
+.feature-heading h6{
+    color: var(--web-whole-color);
+}
+.feature-para{
+    color: var(--faded-text-color);
+}
+.whole-features-box{
+    box-shadow: var(--box-shadow-head-feat);
+    padding: 20px 0;
+}
+
 @media(max-width: 1200px){
     .bootstrap-nav-container{
         left: 0;
         right: 0;
         padding: 5px 3px;
+    }
+    .nav-item{
+        padding: 0;
     }
 }
 
