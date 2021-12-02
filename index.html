@@ -17,31 +17,59 @@
     <!-- fontawsome  -->
     <script src="https://kit.fontawesome.com/a16f8ee6e2.js" crossorigin="anonymous"></script>
 
+    <!-- owlcursol  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- custom  -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <div class="whole-header">
         <div class="upper-header container">
             <div class="main-logo header-left-content">
-                <img src="" alt="img">
+                <img src="img/logo.png" alt="img">
             </div>
             <div class="header-right-content">
-                <div class="mobile-head-bar">
-
+                <div class="mobile-head-bar" id="mobile-header-bar">
+                    <i class="fas fa-sliders-h"></i>
                 </div>
-                <div class="header-phone-number">
-                    <span class="header-phone-icon"><i class="fas fa-phone-square-alt"></i></span> +91 9958924949
-                </div>
-                <div class="header-search-btn">
-                    <span class="header-search-Icon"><i class="fas fa-search"></i></span>
-                </div>
-                <div class="header-log-in">
-                    <span class="header-user-icon"><i class="fas fa-user"></i></span>
-                </div>
-                <div class="header-cart">
-                    <span class="header-cart-icon"><i class="fas fa-shopping-bag"></i></span>
+                <div class="header-right-box" id="header-right-box-toggle">
+                    <div class="header-search-btn">
+                        <div class="search-input">
+                            <input type="text" id="header-search-input" placeholder="Search">
+                            <span class="search-img"><img src="img/search.png"></span>
+                        </div>
+                    </div>
+                    <div class="header-phone-number">
+                        <img src="img/phone-icon.png"> <span> +91 9958924949 </span>
+                    </div>
+                    <div class="download-app-header">
+                        <span class="download-para custom-font-size">Download App</span>
+                        <img src="img/apple.png">
+                        <img src="img/android.png">
+                    </div>
+                    <div class="header-log-in-wish-cart">
+                        <div class="log-in text-center">
+                            <div class="login-img"><img src="img/log-in.png"></div>
+                            <div class="login-text custom-font-size">Login/Register</div>
+                        </div>
+                        <div class="wishlist text-center">
+                            <div class="wishlist-img"><img src="img/wish-list.png" class="custom-margin-b"></div>
+                            <div class="wishlist-text custom-font-size">Wishlist</div>
+                        </div>
+                        <div class="header-cart text-center">
+                            <div class="cart-img"><img src="img/cart.png" class="custom-margin-b"></div>
+                            <div class="cart-text custom-font-size">Cart</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,43 +85,6 @@
                     <div class="bootstrap-nav">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item active">
-                                <a class="nav-link" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Product
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Services
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="#">Split</a>
                             </li>
                             <li class="nav-item">
@@ -109,7 +100,7 @@
                                 <a class="nav-link" href="#">Ductable</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">PRV</a>
+                                <a class="nav-link" href="#">VRV</a>
                             </li>
                         </ul>
                     </div>
@@ -117,50 +108,59 @@
             </div>
         </nav>
     </div>
-    <div class="container">
-        <div class="background-img-container img-fluid"></div>
+
+    <!-- backgrounf-img  -->
+    <div class="background-img-container">
+        <img src="img/mantle.png" class="img-fluid">
     </div>
 
+    <!-- feat  -->
     <section class="features">
         <div class="whole-features-box">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="features-img">
-
-                        </div>
-                        <div class="feature-content">
-                            <div class="feature-heading">
-                                <h6>QUICK DELIVERY</h6>
+                        <div class="feature-flex-box">
+                            <div class="features-img">
+                                <img src="img/quick-delivery.png">
                             </div>
-                            <div class="feature-para">
-                                We are making it easier to shop from home, Enjoy free doorstep delivery
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="features-img">
-
-                        </div>
-                        <div class="feature-content">
-                            <div class="feature-heading">
-                                <h6>E.M.I READY</h6>
-                            </div>
-                            <div class="feature-para">
-                                We are making it easier to shop from home, Enjoy free doorstep delivery
+                            <div class="feature-content">
+                                <div class="feature-heading">
+                                    <h6>QUICK DELIVERY</h6>
+                                </div>
+                                <div class="feature-para custom-font-size">
+                                    We are making it easier to shop from home, Enjoy free doorstep delivery
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="features-img">
-
-                        </div>
-                        <div class="feature-content">
-                            <div class="feature-heading">
-                                <h6>SUPPORT TEAM</h6>
+                        <div class="feature-flex-box">
+                            <div class="features-img">
+                                <img src="img/emi.png">
                             </div>
-                            <div class="feature-para">
-                                Need help now? Call our emergency toll free number
+                            <div class="feature-content">
+                                <div class="feature-heading">
+                                    <h6>E.M.I READY</h6>
+                                </div>
+                                <div class="feature-para custom-font-size">
+                                    We are making it easier to shop from home, Enjoy free doorstep delivery
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="feature-flex-box">
+                            <div class="features-img">
+                                <img src="img/support.png">
+                            </div>
+                            <div class="feature-content">
+                                <div class="feature-heading">
+                                    <h6>SUPPORT TEAM</h6>
+                                </div>
+                                <div class="feature-para custom-font-size">
+                                    Need help now? Call our emergency toll free number
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -169,19 +169,723 @@
         </div>
     </section>
 
+    <!-- air-conditioner  -->
     <section class="air-condition">
+        <div class="container air-condition-container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="air-cond-left">
+                        <div class="head-p-sub-all">
+                            <div class="air-cond-headinmg">
+                                <h3 class="all-large-heading">Air Conditioners</h3>
+                                <p class="medium-size-faded-bold">Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                        <div class="air-cond-long-para">
+                            <p class="air-cond-upper-long normal-large-font-cust">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Dolore illo impedit ducimus dolor quasi! Eut illum perferendis
+                                laudantium quaerat asperiores consequatur, dicta consequuntur et. Illum consectetur sunt
+                                dolorem tempora id.</p>
+                            <p class="normal-large-font-cust">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Consequatur voluptate quae sis tenetur. Tenetur, harum suscipit. Beatae, obcaecaque
+                                totam odio deleniti aperiam omnis aspernatur consequuntur nihil qui provident sit, est
+                                enim ratione natus ducimus tenetur. Animi sit, cupiditate expedita aperiam eligendi
+                                dolores vitae.</p>
+                            <p class="normal-large-font-cust">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Optio, praesentium corrupti blanditiis nemo culpa, odio dolorem ullam modi deserunt
+                                minus necessitatibus temporibus fugit enim?i voluptas ut cupiditate! Iure minima sequi,
+                                accusamus modi magnam ipsam cumque facilis vel voluptates rerum? Sed unde rerum tempore
+                                obcaecati est ullam, consectetur necessitatibus repellendus minus.</p>
+                            <p class="air-cond-lower-long normal-large-font-cust">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Autem, iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quos saepe architecto obcaecati dolorum nisi autem. Molestias pariatur eum quisquam
+                                expedita.</p>
+                        </div>
+                        <div class="air-cond-readmore">
+                            <button class="btns air-cond-read-more-btn normal-large-font-cust">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="air-cond-right">
+                        <div class="air-cond-heading">
+                            <h3 class="all-large-heading text-center">Lorem, ipsum dolor.</h3>
+                        </div>
+                        <div class="round-boxes-air padding-bottom  padding-top">
+                            <div class="outer-box">
+                                <div class="inner-box text-center">
+                                    TOP <br> SELLING
+                                </div>
+                            </div>
+                            <div class="outer-box">
+                                <div class="inner-box text-center">
+                                    BUDGET
+                                </div>
+                            </div>
+                            <div class="outer-box">
+                                <div class="inner-box text-center">
+                                    NEWEST
+                                </div>
+                            </div>
+                            <div class="outer-box">
+                                <div class="inner-box text-center">
+                                    OUR <br> PICKS
+                                </div>
+                            </div>
+                        </div>
+                        <div class="air-cond-heading2">
+                            <h3 class="all-large-heading text-center">Not able to choose AC by your own?</h3>
+                        </div>
+                        <div>
+                            <p class="air-cond-para text-center p-0 m-0 medium-font-size-cust">Try our AC calculator</p>
+                        </div>
+                        <div class="ac-calculator">
+                            <div class="ac-calct-box">
+                                <div class="ac-calct-heading">
+                                    <div class="ac-calc-head">
+                                        <p class="p-0 m-0 medium-font-size-cust">AREA</p>
+                                    </div>
+                                    <div class="ac-calct-icon medium-font-size-cust"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="ac-calct-content">
+                                    Lorem ipsum dolor sit.
+                                </div>
+                            </div>
+                            <div class="ac-calct-box">
+                                <div class="ac-calct-heading">
+                                    <div class="ac-calc-head">
+                                        <p class="p-0 m-0 medium-font-size-cust">STAR</p>
+                                    </div>
+                                    <div class="ac-calct-icon medium-font-size-cust"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="ac-calct-content">
+                                    Lorem ipsum dolor sit.
+                                </div>
+                            </div>
+                            <div class="ac-calct-box">
+                                <div class="ac-calct-heading">
+                                    <div class="ac-calc-head">
+                                        <p class="p-0 m-0 medium-font-size-cust">TYPE</p>
+                                    </div>
+                                    <div class="ac-calct-icon medium-font-size-cust"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="ac-calct-content">
+                                    Lorem ipsum dolor sit.
+                                </div>
+                            </div>
+                            <div class="ac-calct-box">
+                                <div class="ac-calct-heading">
+                                    <div class="ac-calc-head">
+                                        <p class="p-0 m-0 medium-font-size-cust">AC TYPE</p>
+                                    </div>
+                                    <div class="ac-calct-icon medium-font-size-cust"><i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="ac-calct-content">
+                                    Lorem ipsum dolor sit.
+                                </div>
+                            </div>
+                            <div class="ac-calct-range">
+                                <div class="ac-range-price medium-font-size-cust">PRICE</div>
+                                <div class="ac-calc-range-input">
+                                    <input type="range" class="form-range input-range" id="customRange1" min="10000"
+                                        max="40000">
+                                </div>
+                                <div class="ac-calc-input-disabled">
+                                    <p class="m-0">&#x20B9; <span id="ac-js-value">24898</span></p>
+                                </div>
+                            </div>
+                            <div class="ac-find-button">
+                                <button class="btns ac-button-calct">Find AC</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- stars  -->
+    <section class="shop-by-stars">
+        <div class="star-background">
+            <div class="star-content container">
+                <h3 class="all-large-heading text-center">Shop By Star Rating</h3>
+                <p class="padding-bottom text-center custom-font-size-color">Lorem ipsum dolor sit amet.</p>
+                <div class="stars">
+                    <div class="star-item-img"><img src="img/1star.png"></div>
+                    <div class="star-item-img"><img src="img/2star.png"></div>
+                    <div class="star-item-img"><img src="img/3star.png"></div>
+                    <div class="star-item-img"><img src="img/4star.png"></div>
+                    <div class="star-item-img"><img src="img/5star.png"></div>
+                </div>
+                <div class="star-last-para text-center">
+                    <p class="padding-top padding-bottom custom-font-size"><span><img src="img/savings.png"></span> The
+                        more stars , the more savings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- brands  -->
+    <div class="brand-heading">
+        <h3 class="all-large-heading text-center">Shop By Brands</h3>
+        <p class="padding-bottom text-center custom-font-size">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <section class="shop-by-brands">
+        <div class="container brands-container">
+            <div class="brand-outer-box brand-grid-box">
+                <div class="brand-inner-box">
+                    <img src="img/shop-by-brands.png">
+                </div>
+                <div class="brand-inner-box">
+                    <img src="img/voltas.png">
+                </div>
+                <div class="brand-inner-box">
+                    <img src="img/samsung.png">
+                </div>
+                <div class="brand-inner-box">
+                    <img src="img/blue-star.png">
+                </div>
+                <div class="brand-inner-box">
+                    <img src="img/lg.png">
+                </div>
+                <div class="brand-inner-box">
+                    <img src="img/hitachi.png">
+                </div>
+                <div class="brand-inner-box">
+                    <img src="img/loyod.png">
+                </div>
+                <div class="brand-inner-box">
+                    <img src="img/mitsu.png">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div class="brand-button text-center padding-bottom padding-top">
+        <button class="btns brand-btn">View More Brands</button>
+    </div>
+
+    <!-- eco-friendly  -->
+    <section class="eco-freindly">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    
+                    <div class="row text-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="eco-friendly-img">
+                                <img src="img/inverter.png">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="eco-friendly-img">
+                                <img src="img/wifi.png">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
-
+                    <div class="head-p-sub-all">
+                        <div class="air-cond-headinmg">
+                            <h3 class="all-large-heading">Eco friendly Technology</h3>
+                            <p class="medium-size-faded-bold">Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                    <div class="air-cond-long-para">
+                        <p class="air-cond-upper-long normal-large-font-cust">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Dolore illo impedit ducimus dolor quasi! Eut illum perferendis
+                            laudantium quaerat asperiores consequatur, dicta consequuntur et. Illum consectetur sunt
+                            dolorem tempora id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                            explicabo dignissimos quos dolore voluptates minima officia! Cumque nemo eveniet ratione?
+                        </p>
+                        <p class="air-cond-lower-long normal-large-font-cust">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Autem, iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quos saepe architecto obcaecati dolorum nisi autem. Molestias pariatur eum quisquam
+                            expedita.</p>
+                    </div>
+                    <div class="air-cond-readmore">
+                        <button class="btns air-cond-read-more-btn normal-large-font-cust">Read More</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <input type="range" name="range" id="range" min="10000" max="20000"> -->
+
+    <!-- product-slider  -->
+    <section class="product-slider">
+        <div class="container">
+            <h3 class="all-large-heading">Our Best Selling Products</h3>
+            <p class="padding-bottom custom-font-size-color">Lorem ipsum dolor sit amet.</p>
+            <div class="slider-content">
+                <div class="owl-carousel owl-theme s-content">
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-btns-prev-slider prev-next-prod-img"><img src="img/left-arrow.png"></div>
+        <div class="custom-btns-next-slider prev-next-prod-img"><img src="img/right-arrow.png"></div>
+    </section>
+
+    <!-- our services  -->
+    <section class="our-services">
+        <div class="our-services-background">
+            <div class="our-serv-content container">
+                <h3 class="all-large-heading text-center">Our Services</h3>
+                <p class="padding-bottom text-center custom-font-size-color">Lorem ipsum dolor sit amet.</p>
+                <div class="services-images">
+                    <div class="per-service-img">
+                        <img src="img/quick-install.png">
+                        <p class="text-center service-img-text custom-font-size-color">Quick Instasllation</p>
+                    </div>
+                    <div class="per-service-img">
+                        <img src="img/ac-service.png">
+                        <p class="text-center service-img-text custom-font-size-color">AC Services</p>
+                    </div>
+                    <div class="per-service-img">
+                        <img src="img/warenty.png">
+                        <p class="text-center service-img-text custom-font-size-color">Extend Warrenty</p>
+                    </div>
+                    <div class="per-service-img">
+                        <img src="img/repair-service.png">
+                        <p class="text-center service-img-text custom-font-size-color">Repair Service</p>
+                    </div>
+                    <div class="per-service-img">
+                        <img src="img/pipe.png">
+                        <p class="text-center service-img-text custom-font-size-color">Piping</p>
+                    </div>
+                    <div class="per-service-img">
+                        <img src="img/amc.png">
+                        <p class="text-center service-img-text custom-font-size-color">AMC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact hvac  -->
+    <section class="hvac">
+        <div class="havac-container container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="hvac-left-img">
+                        <img src="img/help.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12 hvac-right-content">
+                    <div class="havc-right-box">
+                        <div class="hvac-heading">
+                            <h3 class="all-large-heading">Let Us Help You Next HVAC Project!</h3>
+                        </div>
+                        <div class="project-hvac-type">
+                            <div class="hvac-ty-para medium-font-size-cust">Type of Project</div>
+                            <div class="hvac-radio-input">
+                                <div class="radio-hvac-first-inp">
+                                    <input type="radio" id="commercial" name="hvac" value="commercial" checked>
+                                    <label for="commercial">Commercial</label>
+                                </div>
+                                <div class="radio-hvac-second-inp">
+                                    <input type="radio" id="residental" name="hvac" value="residental">
+                                    <label for="residental">Residental</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hvac-from">
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-12 col-md-12">
+                                    <div class="hvac-from-upper-para">Query Type</div>
+                                    <div class="hvac-frm-lower-box">
+                                        <textarea name="textarea" id="textarea"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 col-md-12">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="hvac-from-upper-para">Expected Area of Poject</div>
+                                            <div class="hvac-frm-lower-box">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="hvac-from-upper-para">Phone</div>
+                                            <div class="hvac-frm-lower-box">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 col-md-12">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="hvac-from-upper-para">Name</div>
+                                            <div class="hvac-frm-lower-box">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="hvac-from-upper-para">Location</div>
+                                            <div class="hvac-frm-lower-box">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 col-md-12">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="hvac-from-upper-para">Gmail ID</div>
+                                            <div class="hvac-frm-lower-box">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class=" padding-top hvac-submit-btn">
+                                                <button class="btns hvac-btn">Submit Your Request</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- newletter  -->
+    <section class="newsletter padding-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="newltr-left-box">
+                        <div class="newsltr-img">
+                            <img src="img/news-letter.png" class="img-fluid">
+                        </div>
+                        <div class="newltr-para-head">
+                            <h3 class="all-large-heading">Subscribe To Our Newsletter</h3>
+                            <p class="padding-bottom custom-font-size-color">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="newltr-sub-btn">
+                        <div class="news-letter-input"><input type="text" id="news-ltr-input"
+                                placeholder="Enter Email ID"></div>
+                        <div class="newltr-btn"><button class="btns newlts-btns">Submit</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <section class="footer">
+        <div class="container padding-bottom padding-top">
+            <div class="footer-content">
+                <div class="footer-box">
+                    <div class="footer-header-img pb-2">
+                        <div class="fotter-img"><img src="img/footer-logo.png"></div>
+                    </div>
+                    <div class="footer-text normal-large-font-cust pb-2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quis non porro nobis corrupti
+                        ipsum similique nisi, eligendi optio recusandae tempore exercitationem. Quam corrupti dolore
+                        sint atque, molestiae reiciendis accusantium suscipit vel, ea nostrum soluta natus! Maiores
+                        inventore doloremque itaque.
+                    </div>
+                    <div class="footer-app-ios-img">
+                        <div class="ios-img"><img src="img/app-store.png" class="img-fluid"></div>
+                        <div class="app-img"><img src="img/google-play-store.png" class="img-fluid"></div>
+                    </div>
+                </div>
+                <div class="footer-box posit-realt-foot-box">
+                    <div class="footer-header padding-bottom large-font-cust-size">Links</div>
+                    <div class="fotter-links pb-1">
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="fotter-links pb-1">
+                        <a href="#">About Us</a>
+                    </div>
+                    <div class="fotter-links pb-1">
+                        <a href="#">Products</a>
+                    </div>
+                    <div class="fotter-links pb-1">
+                        <a href="#">Services</a>
+                    </div>
+                    <div class="fotter-links pb-1">
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-box posit-realt-foot-box">
+                    <div class="footer-header padding-bottom large-font-cust-size">Services</div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Delivery Information</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Payments And Returns</a>
+                    </div>
+                </div>
+                <div class="footer-box posit-realt-foot-box">
+                    <div class="footer-header padding-bottom large-font-cust-size">My Account</div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">My Account</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Wish List</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Orders History</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Order Tracking</a>
+                    </div>
+                </div>
+                <div class="footer-box posit-realt-foot-box">
+                    <div class="footer-header padding-bottom large-font-cust-size">Contact Info</div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">K1/32, Rajapuri, <br> Opp, Dwarka Sec-5, <br> New Delhi-110059</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">info@electricoworld.com</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">+91 9958924949</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-down-copyright">
+                <div class="footer-logo text-center pb-1"><img src="img/footer-social-icons.png" class="img-fluid">
+                </div>
+                <p class="text-center copyright-text-footer">Copyright 2020 All rights Reserved</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            // center: true,
+            // autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+        $('.custom-btns-next-slider').click(function () {
+            owl.trigger('next.owl.carousel');
+        })
+        $('.custom-btns-prev-slider').click(function () {
+            owl.trigger('prev.owl.carousel', [300]);
+        })
+    </script>
     <script src="logic.js"></script>
 </body>
 
