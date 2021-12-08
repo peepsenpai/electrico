@@ -31,11 +31,27 @@
 
 </head>
 
-<body>
+<body onload="PageLoaded()">
+    <!-- preLoader  -->
+    <div id="pre-loader">
+        <div class="pre-loading-img">
+            <div class="loading-content">
+                <div class="loading-img">
+                    <img src="img/logo.png">
+                </div>
+                <div class="loading-animation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="whole-header">
         <div class="upper-header container">
             <div class="main-logo header-left-content">
-                <img src="img/logo.png" alt="img">
+                <a href="index.html"><img src="img/logo.png" alt="img"></a>
             </div>
             <div class="header-right-content">
                 <div class="mobile-head-bar" id="mobile-header-bar">
@@ -73,40 +89,41 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container bootstrap-nav-container">
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse bootstrap-navbar" id="navbarSupportedContent">
-                    <div class="bootstrap-nav">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Split</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Window</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Cassette</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Tower</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Ductable</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">VRV</a>
-                            </li>
-                        </ul>
+        <div class="container lower-header-box">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="bootstrap-nav-container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bootstrap-navbar" id="navbarSupportedContent">
+                        <div class="bootstrap-nav">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Split</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Window</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Cassette</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Tower</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Ductable</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">VRV</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </div>
 
     <!-- backgrounf-img  -->
@@ -241,52 +258,137 @@
                         </div>
                         <div class="ac-calculator">
                             <div class="ac-calct-box">
-                                <div class="ac-calct-heading">
+                                <!-- <div class="ac-calct-heading">
                                     <div class="ac-calc-head">
                                         <p class="p-0 m-0 medium-font-size-cust">AREA</p>
                                     </div>
-                                    <div class="ac-calct-icon medium-font-size-cust"><i class="fas fa-chevron-down"></i>
+                                    <div class="ac-calct-icon medium-font-size-cust"><i
+                                            class="fas fa-chevron-down"></i><span><i
+                                                class="fas fa-chevron-up"></i></span>
                                     </div>
                                 </div>
                                 <div class="ac-calct-content">
-                                    Lorem ipsum dolor sit.
-                                </div>
+                                    <div class="ac-caclt-input-box m-1">
+                                        <input type="checkbox" name="50-100ft">
+                                        <label for="50-100ft">50 ft² to 100 ft²</label>
+                                    </div>
+                                    <div class="ac-caclt-input-box m-1">
+                                        <input type="checkbox" name="100-200ft">
+                                        <label for="100-200ft">100 ft² to 200 ft²</label>
+                                    </div>
+                                    <div class="ac-caclt-input-box m-1">
+                                        <input type="checkbox" name="200-300ft">
+                                        <label for="200-300ft">200 ft² to 300 ft²</label>
+                                    </div>
+                                    <div class="ac-caclt-input-box m-1">
+                                        <input type="checkbox" name="300-400ft">
+                                        <label for="300-400ft">300 ft² to 400 ft²</label>
+                                    </div>
+                                    <div class="ac-caclt-input-box m-1">
+                                        <input type="checkbox" name="400-500ft">
+                                        <label for="400-500ft">400 ft² to 500 ft²</label>
+                                    </div>
+                                </div> -->
+                                <select class="form-select form-select-md p-2" aria-label=".form-select-lg example">
+                                    <option selected>AREA</option>
+                                    <option value="50-100">50 ft² to 100 ft²</option>
+                                    <option value="100-200">100 ft² to 200 ft²</option>
+                                    <option value="200-300">200 ft² to 300 ft²</option>
+                                    <option value="300-400">300 ft² to 400 ft²</option>
+                                    <option value="400-500">400 ft² to 500 ft²</option>
+                                </select>
+
                             </div>
                             <div class="ac-calct-box">
-                                <div class="ac-calct-heading">
+                                <!-- <div class="ac-calct-heading">
                                     <div class="ac-calc-head">
                                         <p class="p-0 m-0 medium-font-size-cust">STAR</p>
                                     </div>
-                                    <div class="ac-calct-icon medium-font-size-cust"><i class="fas fa-chevron-down"></i>
+                                    <div class="ac-calct-icon medium-font-size-cust"><i
+                                            class="fas fa-chevron-down"></i><span><i
+                                                class="fas fa-chevron-up"></i></span>
                                     </div>
                                 </div>
                                 <div class="ac-calct-content">
-                                    Lorem ipsum dolor sit.
-                                </div>
+                                    <div class="ac-caclt-input-box m-1">
+                                        <input type="checkbox" name="1-star">
+                                        <label for="1-star">1 Star</label>
+                                    </div>
+                                    <div class="ac-caclt-input-box m-1">
+                                        <input type="checkbox" name="2-star">
+                                        <label for="2-star">2 Star</label>
+                                    </div>
+                                    <div class="ac-caclt-input-box m-1">
+                                        <input type="checkbox" name="3-star">
+                                        <label for="3-star">3 Star</label>
+                                    </div>
+                                    <div class="ac-caclt-input-box m-1">
+                                        <input type="checkbox" name="4-star">
+                                        <label for="4-star">4 Star</label>
+                                    </div>
+                                    <div class="ac-caclt-input-box m-1">
+                                        <input type="checkbox" name="5-star">
+                                        <label for="5-star">5 Star</label>
+                                    </div>
+                                </div> -->
+                                <select class="form-select form-select-md p-2" aria-label=".form-select-lg example">
+                                    <option selected>STAR</option>
+                                    <option value="1star">1 Star</option>
+                                    <option value="2star">2 Star</option>
+                                    <option value="3star">3 Star</option>
+                                    <option value="4star">4 Star</option>
+                                    <option value="5star">5 Star</option>
+                                </select>
                             </div>
                             <div class="ac-calct-box">
-                                <div class="ac-calct-heading">
+                                <!-- <div class="ac-calct-heading">
                                     <div class="ac-calc-head">
                                         <p class="p-0 m-0 medium-font-size-cust">TYPE</p>
                                     </div>
-                                    <div class="ac-calct-icon medium-font-size-cust"><i class="fas fa-chevron-down"></i>
+                                    <div class="ac-calct-icon medium-font-size-cust"><i
+                                            class="fas fa-chevron-down"></i><span><i
+                                                class="fas fa-chevron-up"></i></span>
                                     </div>
                                 </div>
                                 <div class="ac-calct-content">
-                                    Lorem ipsum dolor sit.
-                                </div>
+                                    <p class="p-0 m-1 all-ac-type-para-word">Cassette</p>
+                                    <p class="p-0 m-1 all-ac-type-para-word">Portable</p>
+                                    <p class="p-0 m-1 all-ac-type-para-word">Split</p>
+                                    <p class="p-0 m-1 all-ac-type-para-word">Window</p>
+                                </div> -->
+                                <select class="form-select form-select-md p-2" aria-label=".form-select-lg example">
+                                    <option selected>TYPE</option>
+                                    <option value="Cassette">Cassette</option>
+                                    <option value="Portable">Portable</option>
+                                    <option value="Split">Split</option>
+                                    <option value="Window">Window</option>
+                                </select>
                             </div>
                             <div class="ac-calct-box">
-                                <div class="ac-calct-heading">
+                                <!-- <div class="ac-calct-heading">
                                     <div class="ac-calc-head">
                                         <p class="p-0 m-0 medium-font-size-cust">AC TYPE</p>
                                     </div>
-                                    <div class="ac-calct-icon medium-font-size-cust"><i class="fas fa-chevron-down"></i>
+                                    <div class="ac-calct-icon medium-font-size-cust"><i
+                                            class="fas fa-chevron-down"></i><span><i
+                                                class="fas fa-chevron-up"></i></span>
                                     </div>
                                 </div>
                                 <div class="ac-calct-content">
-                                    Lorem ipsum dolor sit.
-                                </div>
+                                    <div class="ac-caclt-input-box m-1">
+                                        <input type="checkbox" name="central-air-cond">
+                                        <label for="central-air-cond">Central Air Conditioner</label>
+                                    </div>
+                                    <div class="ac-caclt-input-box m-1">
+                                        <input type="checkbox" name="duct-less-mini-split">
+                                        <label for="duct-less-mini-split">Ductless Mini-Split</label>
+                                    </div>
+                                </div> -->
+                                <select class="form-select form-select-md p-2" aria-label=".form-select-lg example">
+                                    <option selected>AC TYPE</option>
+                                    <option value="Central-Air-Conditioner">Central Air Conditioner</option>
+                                    <option value="Ductless-Mini-Split">Ductless Mini-Split</option>
+                                </select>
                             </div>
                             <div class="ac-calct-range">
                                 <div class="ac-range-price medium-font-size-cust">PRICE</div>
@@ -390,7 +492,7 @@
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="head-p-sub-all">
                         <div class="air-cond-headinmg">
-                            <h3 class="all-large-heading">Eco friendly Technology</h3>
+                            <h3 class="all-large-heading">Eco Friendly Technology</h3>
                             <p class="medium-size-faded-bold">Lorem, ipsum dolor.</p>
                         </div>
                     </div>
@@ -422,188 +524,204 @@
             <div class="slider-content">
                 <div class="owl-carousel owl-theme s-content">
                     <div class="item">
-                        <div class="flex-product-box">
-                            <div class="product-per-box">
-                                <div class="product-img">
-                                    <img src="img/daikin.png" class="img-fluid">
-                                </div>
-                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
-                                <div class="product-price">
-                                    <span class="prod-price-text">Price: </span> <span
-                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
-                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
-                                </div>
-                                <div class="star-offer-product">
-                                    <div class="prod-star-img">
-                                        <img src="img/five-star.png">
+                        <a href="./product_details.html">
+                            <div class="flex-product-box">
+                                <div class="product-per-box">
+                                    <div class="product-img">
+                                        <img src="img/daikin.png" class="img-fluid">
                                     </div>
-                                    <div class="product-offer-img">
-                                        <img src="img/discount.png">
+                                    <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                    <div class="product-price">
+                                        <span class="prod-price-text">Price: </span> <span
+                                            class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                            class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                    </div>
+                                    <div class="star-offer-product">
+                                        <div class="prod-star-img">
+                                            <img src="img/five-star.png">
+                                        </div>
+                                        <div class="product-offer-img">
+                                            <img src="img/discount.png">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item">
-                        <div class="flex-product-box">
-                            <div class="product-per-box">
-                                <div class="product-img">
-                                    <img src="img/daikin.png" class="img-fluid">
-                                </div>
-                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
-                                <div class="product-price">
-                                    <span class="prod-price-text">Price: </span> <span
-                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
-                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
-                                </div>
-                                <div class="star-offer-product">
-                                    <div class="prod-star-img">
-                                        <img src="img/five-star.png">
+                        <a href="./product_details.html">
+                            <div class="flex-product-box">
+                                <div class="product-per-box">
+                                    <div class="product-img">
+                                        <img src="img/daikin.png" class="img-fluid">
                                     </div>
-                                    <div class="product-offer-img">
-                                        <img src="img/discount.png">
+                                    <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                    <div class="product-price">
+                                        <span class="prod-price-text">Price: </span> <span
+                                            class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                            class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                    </div>
+                                    <div class="star-offer-product">
+                                        <div class="prod-star-img">
+                                            <img src="img/five-star.png">
+                                        </div>
+                                        <div class="product-offer-img">
+                                            <img src="img/discount.png">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item">
-                        <div class="flex-product-box">
-                            <div class="product-per-box">
-                                <div class="product-img">
-                                    <img src="img/daikin.png" class="img-fluid">
-                                </div>
-                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
-                                <div class="product-price">
-                                    <span class="prod-price-text">Price: </span> <span
-                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
-                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
-                                </div>
-                                <div class="star-offer-product">
-                                    <div class="prod-star-img">
-                                        <img src="img/five-star.png">
+                        <a href="./product_details.html">
+                            <div class="flex-product-box">
+                                <div class="product-per-box">
+                                    <div class="product-img">
+                                        <img src="img/daikin.png" class="img-fluid">
                                     </div>
-                                    <div class="product-offer-img">
-                                        <img src="img/discount.png">
+                                    <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                    <div class="product-price">
+                                        <span class="prod-price-text">Price: </span> <span
+                                            class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                            class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                    </div>
+                                    <div class="star-offer-product">
+                                        <div class="prod-star-img">
+                                            <img src="img/five-star.png">
+                                        </div>
+                                        <div class="product-offer-img">
+                                            <img src="img/discount.png">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item">
-                        <div class="flex-product-box">
-                            <div class="product-per-box">
-                                <div class="product-img">
-                                    <img src="img/daikin.png" class="img-fluid">
-                                </div>
-                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
-                                <div class="product-price">
-                                    <span class="prod-price-text">Price: </span> <span
-                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
-                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
-                                </div>
-                                <div class="star-offer-product">
-                                    <div class="prod-star-img">
-                                        <img src="img/five-star.png">
+                        <a href="./product_details.html">
+                            <div class="flex-product-box">
+                                <div class="product-per-box">
+                                    <div class="product-img">
+                                        <img src="img/daikin.png" class="img-fluid">
                                     </div>
-                                    <div class="product-offer-img">
-                                        <img src="img/discount.png">
+                                    <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                    <div class="product-price">
+                                        <span class="prod-price-text">Price: </span> <span
+                                            class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                            class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                    </div>
+                                    <div class="star-offer-product">
+                                        <div class="prod-star-img">
+                                            <img src="img/five-star.png">
+                                        </div>
+                                        <div class="product-offer-img">
+                                            <img src="img/discount.png">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item">
-                        <div class="flex-product-box">
-                            <div class="product-per-box">
-                                <div class="product-img">
-                                    <img src="img/daikin.png" class="img-fluid">
-                                </div>
-                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
-                                <div class="product-price">
-                                    <span class="prod-price-text">Price: </span> <span
-                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
-                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
-                                </div>
-                                <div class="star-offer-product">
-                                    <div class="prod-star-img">
-                                        <img src="img/five-star.png">
+                        <a href="./product_details.html">
+                            <div class="flex-product-box">
+                                <div class="product-per-box">
+                                    <div class="product-img">
+                                        <img src="img/daikin.png" class="img-fluid">
                                     </div>
-                                    <div class="product-offer-img">
-                                        <img src="img/discount.png">
+                                    <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                    <div class="product-price">
+                                        <span class="prod-price-text">Price: </span> <span
+                                            class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                            class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                    </div>
+                                    <div class="star-offer-product">
+                                        <div class="prod-star-img">
+                                            <img src="img/five-star.png">
+                                        </div>
+                                        <div class="product-offer-img">
+                                            <img src="img/discount.png">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item">
-                        <div class="flex-product-box">
-                            <div class="product-per-box">
-                                <div class="product-img">
-                                    <img src="img/daikin.png" class="img-fluid">
-                                </div>
-                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
-                                <div class="product-price">
-                                    <span class="prod-price-text">Price: </span> <span
-                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
-                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
-                                </div>
-                                <div class="star-offer-product">
-                                    <div class="prod-star-img">
-                                        <img src="img/five-star.png">
+                        <a href="./product_details.html">
+                            <div class="flex-product-box">
+                                <div class="product-per-box">
+                                    <div class="product-img">
+                                        <img src="img/daikin.png" class="img-fluid">
                                     </div>
-                                    <div class="product-offer-img">
-                                        <img src="img/discount.png">
+                                    <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                    <div class="product-price">
+                                        <span class="prod-price-text">Price: </span> <span
+                                            class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                            class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                    </div>
+                                    <div class="star-offer-product">
+                                        <div class="prod-star-img">
+                                            <img src="img/five-star.png">
+                                        </div>
+                                        <div class="product-offer-img">
+                                            <img src="img/discount.png">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item">
-                        <div class="flex-product-box">
-                            <div class="product-per-box">
-                                <div class="product-img">
-                                    <img src="img/daikin.png" class="img-fluid">
-                                </div>
-                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
-                                <div class="product-price">
-                                    <span class="prod-price-text">Price: </span> <span
-                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
-                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
-                                </div>
-                                <div class="star-offer-product">
-                                    <div class="prod-star-img">
-                                        <img src="img/five-star.png">
+                        <a href="./product_details.html">
+                            <div class="flex-product-box">
+                                <div class="product-per-box">
+                                    <div class="product-img">
+                                        <img src="img/daikin.png" class="img-fluid">
                                     </div>
-                                    <div class="product-offer-img">
-                                        <img src="img/discount.png">
+                                    <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                    <div class="product-price">
+                                        <span class="prod-price-text">Price: </span> <span
+                                            class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                            class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                    </div>
+                                    <div class="star-offer-product">
+                                        <div class="prod-star-img">
+                                            <img src="img/five-star.png">
+                                        </div>
+                                        <div class="product-offer-img">
+                                            <img src="img/discount.png">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="item">
-                        <div class="flex-product-box">
-                            <div class="product-per-box">
-                                <div class="product-img">
-                                    <img src="img/daikin.png" class="img-fluid">
-                                </div>
-                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
-                                <div class="product-price">
-                                    <span class="prod-price-text">Price: </span> <span
-                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
-                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
-                                </div>
-                                <div class="star-offer-product">
-                                    <div class="prod-star-img">
-                                        <img src="img/five-star.png">
+                        <a href="./product_details.html">
+                            <div class="flex-product-box">
+                                <div class="product-per-box">
+                                    <div class="product-img">
+                                        <img src="img/daikin.png" class="img-fluid">
                                     </div>
-                                    <div class="product-offer-img">
-                                        <img src="img/discount.png">
+                                    <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                    <div class="product-price">
+                                        <span class="prod-price-text">Price: </span> <span
+                                            class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                            class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                    </div>
+                                    <div class="star-offer-product">
+                                        <div class="prod-star-img">
+                                            <img src="img/five-star.png">
+                                        </div>
+                                        <div class="product-offer-img">
+                                            <img src="img/discount.png">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -654,7 +772,7 @@
             <div class="row">
                 <div class="col-lg-5 col-md-12 col-sm-12">
                     <div class="hvac-left-img">
-                        <img src="img/help.png" class="img-fluid">
+                        <img src="img/help (1).png" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-12 col-sm-12 hvac-right-content">
@@ -718,7 +836,7 @@
                                 <div class="col-lg-12 col-sm-12 col-md-12">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-sm-12">
-                                            <div class="hvac-from-upper-para">Gmail ID</div>
+                                            <div class="hvac-from-upper-para">Email ID</div>
                                             <div class="hvac-frm-lower-box">
                                                 <input type="text">
                                             </div>
@@ -742,7 +860,7 @@
     <section class="newsletter padding-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="col-lg-7 col-md-12 col-sm-12">
                     <div class="newltr-left-box">
                         <div class="newsltr-img">
                             <img src="img/news-letter.png" class="img-fluid">
@@ -753,7 +871,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="col-lg-5 col-md-12 col-sm-12">
                     <div class="newltr-sub-btn">
                         <div class="news-letter-input"><input type="text" id="news-ltr-input"
                                 placeholder="Enter Email ID"></div>
@@ -766,7 +884,7 @@
 
     <!-- footer  -->
     <section class="footer">
-        <div class="container padding-bottom padding-top">
+        <div class="container padding-top">
             <div class="footer-content">
                 <div class="footer-box">
                     <div class="footer-header-img pb-2">
@@ -775,8 +893,7 @@
                     <div class="footer-text normal-large-font-cust pb-2">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quis non porro nobis corrupti
                         ipsum similique nisi, eligendi optio recusandae tempore exercitationem. Quam corrupti dolore
-                        sint atque, molestiae reiciendis accusantium suscipit vel, ea nostrum soluta natus! Maiores
-                        inventore doloremque itaque.
+                        sint atque, molestiae reici.
                     </div>
                     <div class="footer-app-ios-img">
                         <div class="ios-img"><img src="img/app-store.png" class="img-fluid"></div>
@@ -786,13 +903,13 @@
                 <div class="footer-box posit-realt-foot-box">
                     <div class="footer-header padding-bottom large-font-cust-size">Links</div>
                     <div class="fotter-links pb-1">
-                        <a href="#">Home</a>
+                        <a href="./index.html">Home</a>
                     </div>
                     <div class="fotter-links pb-1">
                         <a href="#">About Us</a>
                     </div>
                     <div class="fotter-links pb-1">
-                        <a href="#">Products</a>
+                        <a href="./product_listing.html">Products</a>
                     </div>
                     <div class="fotter-links pb-1">
                         <a href="#">Services</a>
@@ -813,7 +930,7 @@
                         <a href="#">Delivery Information</a>
                     </div>
                     <div class="fotter-links pb-2">
-                        <a href="#">Payments And Returns</a>
+                        <a href="#">Payment and Returns</a>
                     </div>
                 </div>
                 <div class="footer-box posit-realt-foot-box">
@@ -833,14 +950,15 @@
                 </div>
                 <div class="footer-box posit-realt-foot-box">
                     <div class="footer-header padding-bottom large-font-cust-size">Contact Info</div>
-                    <div class="fotter-links pb-2">
-                        <a href="#">K1/32, Rajapuri, <br> Opp, Dwarka Sec-5, <br> New Delhi-110059</a>
+                    <div class="fotter-links pb-2 address-footer">
+                        K1/32, Rajapuri, <br> Opp, Dwarka Sec-5, <br> New Delhi-110059
                     </div>
                     <div class="fotter-links pb-2">
-                        <a href="#">info@electricoworld.com</a>
+                        <a href="mailto:info@electricoworld.com"><span><i class="fas fa-envelope"></i></span>
+                            info@electricoworld.com</a>
                     </div>
                     <div class="fotter-links pb-2">
-                        <a href="#">+91 9958924949</a>
+                        <a href="tel:+91-9958924949"><span><i class="fas fa-phone-alt"></i></span> +91 99589 24949</a>
                     </div>
                 </div>
             </div>
@@ -875,7 +993,7 @@
                     items: 1
                 },
                 1000: {
-                    items: 3
+                    items: 4
                 }
             }
         })
@@ -884,6 +1002,32 @@
         })
         $('.custom-btns-prev-slider').click(function () {
             owl.trigger('prev.owl.carousel', [300]);
+        })
+    </script>
+
+    <script>
+        let nqvItem = document.querySelectorAll('.nav-item')
+        // console.log(nqvItem[0]);
+        let count = 0;
+        (function () {
+            setInterval(() => {
+                nqvItem.forEach((e) => {
+                    e.classList.remove('active');
+                })
+                nqvItem[count].classList.add('active');
+                count++
+                if (count > 5) {
+                    count = 0;
+                }
+            }, 2000)
+        }())
+
+        // ac 
+        let range = document.getElementById('customRange1');
+        let spanValue = document.getElementById('ac-js-value')
+        range.addEventListener('change', () => {
+            let val = range.value;
+            spanValue.innerText = val;
         })
     </script>
     <script src="logic.js"></script>

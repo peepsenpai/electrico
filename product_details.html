@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrico - Product Details</title>
+
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- fontawsome  -->
+    <script src="https://kit.fontawesome.com/a16f8ee6e2.js" crossorigin="anonymous"></script>
+
+    <!-- owlcursol  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="PageLoaded()">
+    <!-- preLoader  -->
+    <div id="pre-loader">
+        <div class="pre-loading-img">
+            <div class="loading-content">
+                <div class="loading-img">
+                    <img src="img/logo.png">
+                </div>
+                <div class="loading-animation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header  -->
+    <div class="whole-header">
+        <div class="upper-header container">
+            <div class="main-logo header-left-content">
+                <a href="index.html"><img src="img/logo.png" alt="img"></a>
+            </div>
+            <div class="header-right-content">
+                <div class="mobile-head-bar" id="mobile-header-bar">
+                    <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="header-right-box" id="header-right-box-toggle">
+                    <div class="header-search-btn">
+                        <div class="search-input">
+                            <input type="text" id="header-search-input" placeholder="Search">
+                            <span class="search-img"><img src="img/search.png"></span>
+                        </div>
+                    </div>
+                    <div class="header-phone-number">
+                        <img src="img/phone-icon.png"> <span> +91 9958924949 </span>
+                    </div>
+                    <div class="download-app-header">
+                        <span class="download-para custom-font-size">Download App</span>
+                        <img src="img/apple.png">
+                        <img src="img/android.png">
+                    </div>
+                    <div class="header-log-in-wish-cart">
+                        <div class="log-in text-center">
+                            <div class="login-img"><img src="img/log-in.png"></div>
+                            <div class="login-text custom-font-size">Login/Register</div>
+                        </div>
+                        <div class="wishlist text-center">
+                            <div class="wishlist-img"><img src="img/wish-list.png" class="custom-margin-b"></div>
+                            <div class="wishlist-text custom-font-size">Wishlist</div>
+                        </div>
+                        <div class="header-cart text-center">
+                            <div class="cart-img"><img src="img/cart.png" class="custom-margin-b"></div>
+                            <div class="cart-text custom-font-size">Cart</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container lower-header-box">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="bootstrap-nav-container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bootstrap-navbar" id="navbarSupportedContent">
+                        <div class="bootstrap-nav">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ABOUT US</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        PRODUCTS
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        SERVICES
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- backgrounf-img  -->
+    <div class="background-img-container">
+        <img src="img/banner.png" class="img-fluid">
+    </div>
+
+    <div class="pagination-product-listing container">
+        <div class="prod-filter-home-list-para normal-large-font-cust">
+            Home Product <span><i class="fas fa-chevron-right"></i></span> Products <span><i
+                    class="fas fa-chevron-right"></i></span> Dalkin <span><i class="fas fa-chevron-right"></i></span>
+            FD231
+        </div>
+    </div>
+
+    <div class="product-datails-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="prod-detail-mailProdImg">
+                        <!-- <img src="img/ac-with-google.png" class="img-fluid" id="imgZoom"> -->
+
+                        <div class="image-wrap">
+                            <div class="image" id="prodDetImg"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="other-product-of-prodDet pt-2">
+                        <div class="prod-det-other">
+                            <img src="img/a6.png">
+                        </div>
+                        <div class="prod-det-other">
+                            <img src="img/a6.png">
+                        </div>
+                        <div class="prod-det-other">
+                            <img src="img/a6.png">
+                        </div>
+                        <div class="prod-det-other">
+                            <img src="img/a6.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="prod-details-top-head">
+                        <h3 class="all-large-heading">Dalkin 1 Ton 3 Star Inverter Split AC</h3>
+                        <p class="large-font-cust-size">Hi speed cooling with power saving</p>
+                    </div>
+                    <div class="prod-details-modal prod-deatils-cust-font-des pb-2">
+                        Model FCVF-A / FCQN-E | Voltage: 230 | Color: White
+                    </div>
+                    <div class="prod-details-rating pb-4">
+                        <span class="prod-deatils-cust-font-des">Rating: </span> <span
+                            class="prod-detail-raing-img"><img src="img/five-star.png"></span>
+                    </div>
+                    <div class="prod-detail-rating-ans-que pb-2">
+                        2176 ratings | 321 answered questions
+                    </div>
+                    <p class="installation-prod-detail-charges pb-4">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Officia deleniti amet est perferendis dolore facilis modi ratione natus aliquid sapiente
+                        rerum culpa cupiditate, laborum a, at officiis fuga dolores maiores minima repellat vitis.</p>
+                    <div class="mrp-selling prod-details-large-color-font">
+                        <span>M.R.P : ₹ <del>45,351</del></span> <span class="selling-price-prod-deta">Selling Price : ₹
+                            <del>35,481</del></span>
+                    </div>
+                    <div class="offer-price-gst pt-2 pb-1">
+                        <h2 class="offer-price p-0 m-0">OFFER PRICE</h2>
+                        <p class="p-0 m-0 custom-font-size">Inclusive of all taxes & GST*</p>
+                    </div>
+                    <div class="prod-detail-price pt-0 pb-3">
+                        <h2 class="p-0 m-0">₹ 33,369/-</h2>
+                    </div>
+                    <div class="delivery-pin-code pt-5 pb-4">
+                        <div class="enter-pin prod-details-large-color-font">Enter Delivery PIN Code</div>
+                        <div class="pin-input"><span class="location-icon"></span>
+                            <input type="text" placeholder="123456">
+                            <i class="fas fa-map-marker-alt prod-map-absolt-icon"></i>
+                        </div>
+                        <div class="check-btn">
+                            <button class="btns delivery-pin-btn">Check</button>
+                        </div>
+                    </div>
+                    <div class="prod-det-cart-btn pb-2">
+                        <button class="prod-det-add-to-cart btns text-center">
+                            <span><img src="img/cart.png"> Add to Cart </span>
+                        </button>
+                    </div>
+                    <div class="prod-det-ad-wish-btn">
+                        <button class="btns prod-det-wish-list">
+                            <span><img src="img/a5.png"> Add to Wishlist</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-dtails-tabs container">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item-custom" role="presentation">
+                <button class="extra-large-font-cust-size prod-deatis-tab-btn active" id="pills-descrip-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-descrip" type="button" role="tab"
+                    aria-controls="pills-descrip" aria-selected="true">Description</button>
+            </li>
+            <li class="nav-item-custom" role="presentation">
+                <button class="extra-large-font-cust-size prod-deatis-tab-btn" id="pills-specifica-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-specifica" type="button" role="tab"
+                    aria-controls="pills-specifica" aria-selected="false">Specifications</button>
+            </li>
+            <li class="nav-item-custom" role="presentation">
+                <button class="extra-large-font-cust-size prod-deatis-tab-btn" id="pills-brand-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-brand" type="button" role="tab"
+                    aria-controls="pills-brand" aria-selected="false">Brand Specifications</button>
+            </li>
+            <li class="nav-item-custom" role="presentation">
+                <button class="extra-large-font-cust-size prod-deatis-tab-btn" id="pills-reviews-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-reviews" type="button" role="tab"
+                    aria-controls="pills-reviews" aria-selected="false">Reviews</button>
+            </li>
+            <li class="nav-item-custom" role="presentation">
+                <button class="extra-large-font-cust-size prod-deatis-tab-btn" id="pills-faqs-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-faqs" type="button" role="tab" aria-controls="pills-faqs"
+                    aria-selected="false">FAQs</button>
+            </li>
+        </ul>
+        <div class="tab-content prod-deetail-tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active normal-large-font-cust" id="pills-descrip" role="tabpanel"
+                aria-labelledby="pills-descrip-tab">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+                autem! <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur vero enim eos
+                perspiciatis magni accusamus fuga sequi rerum, voluptatibus obcaecati!</div>
+            <div class="tab-pane fade normal-large-font-cust" id="pills-specifica" role="tabpanel" aria-labelledby="pills-specifica-tab">Lorem
+                ipsum dolor sit amet.</div>
+            <div class="tab-pane fade normal-large-font-cust" id="pills-brand" role="tabpanel" aria-labelledby="pills-brand-tab">Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Explicabo, nihil. <br> Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quis, quia neque. Animi unde soluta repellat harum? Commodi sapiente illum
+                magnam ex velit doloremque sequi, iure tempora nostrum at, id minus! <br> Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Odit eligendi fuga, quae quaerat ipsam ipsa totam mollitia distinctio
+                deleniti pariatur quod maxime. Aut commodi possimus hic at. Deleniti, atque veniam.</div>
+            <div class="tab-pane fade normal-large-font-cust" id="pills-reviews" role="tabpanel" aria-labelledby="pills-reviews-tab">Lorem
+                ipsum dolor sit amet.</div>
+            <div class="tab-pane fade normal-large-font-cust" id="pills-faqs" role="tabpanel" aria-labelledby="pills-faqs-tab">Lorem
+                ipsum dolor sit amet. <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex id dolorum
+                impedit accusantium. Doloremque cupiditate, aut vero voluptas aliquid odio?</div>
+        </div>
+    </div>
+
+    <div class="prodDet-suggested-ser">
+        <div class="container">
+            <div class="prod-det-services-head">
+                <h3 class="all-large-heading">Suggested Services</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="prod-details-service-box">
+                                <div class="prod-det-service-img text-center">
+                                    <img src="img/a1.png">
+                                    <p class="p-0 m-0">Instalation</p>
+                                </div>
+                                <div class="services-cart-btn text-center">
+                                    <button class="btns service-cart-button jsColorAdded" onclick="cartBtnColor(this)">
+                                        <span><img src="img/cart.png"></span> <span class="service-text"> Service
+                                            Added</span>
+                                        <i class="fas fa-check-circle absolute-checkbox-proDet active"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="prod-details-service-box">
+                                <div class="prod-det-service-img text-center">
+                                    <img src="img/a2.png">
+                                    <p class="p-0 m-0">Ext. Warrenty</p>
+                                </div>
+                                <div class="services-cart-btn text-center">
+                                    <button class="btns service-cart-button jsColor" onclick="cartBtnColor(this)">
+                                        <span><img src="img/cart.png"></span> <span class="service-text"> Add to
+                                            Cart</span>
+                                            <i class="fas fa-check-circle absolute-checkbox-proDet"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="prod-details-service-box">
+                                <div class="prod-det-service-img text-center">
+                                    <img src="img/a3.png">
+                                    <p class="p-0 m-0">Piping</p>
+
+                                </div>
+                                <div class="services-cart-btn text-center">
+                                    <button class="btns service-cart-button jsColorAdded" onclick="cartBtnColor(this)">
+                                        <span><img src="img/cart.png"></span> <span class="service-text"> Service
+                                            Added</span>
+                                            <i class="fas fa-check-circle absolute-checkbox-proDet active"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="prod-details-service-box">
+                                <div class="prod-det-service-img text-center">
+                                    <img src="img/a4.png">
+                                    <p class="p-0 m-0">AMC</p>
+                                </div>
+                                <div class="services-cart-btn text-center">
+                                    <button class="btns service-cart-button jsColor" onclick="cartBtnColor(this)">
+                                        <span><img src="img/cart.png"></span> <span class="service-text"> Add to
+                                            Cart</span>
+                                            <i class="fas fa-check-circle absolute-checkbox-proDet"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="peroff-img">
+                        <img src="img/ad-banner.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- product-slider  -->
+    <section class="product-slider">
+        <div class="container">
+            <h3 class="all-large-heading">Our Best Selling Products</h3>
+            <p class="padding-bottom custom-font-size-color">Lorem ipsum dolor sit amet.</p>
+            <div class="slider-content">
+                <div class="owl-carousel owl-theme s-content">
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="flex-product-box">
+                            <div class="product-per-box">
+                                <div class="product-img">
+                                    <img src="img/daikin.png" class="img-fluid">
+                                </div>
+                                <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
+                                <div class="product-price">
+                                    <span class="prod-price-text">Price: </span> <span
+                                        class="prod-actual-price">&#x20B9; 25,999</span> <span
+                                        class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
+                                </div>
+                                <div class="star-offer-product">
+                                    <div class="prod-star-img">
+                                        <img src="img/five-star.png">
+                                    </div>
+                                    <div class="product-offer-img">
+                                        <img src="img/discount.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-btns-prev-slider prev-next-prod-img"><img src="img/left-arrow.png"></div>
+        <div class="custom-btns-next-slider prev-next-prod-img"><img src="img/right-arrow.png"></div>
+    </section>
+
+    <!-- footer  -->
+    <section class="footer">
+        <div class="container padding-top">
+            <div class="footer-content">
+                <div class="footer-box">
+                    <div class="footer-header-img pb-2">
+                        <div class="fotter-img"><img src="img/footer-logo.png"></div>
+                    </div>
+                    <div class="footer-text normal-large-font-cust pb-2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quis non porro nobis corrupti
+                        ipsum similique nisi, eligendi optio recusandae tempore exercitationem. Quam corrupti dolore
+                        sint atque, molestiae reici.
+                    </div>
+                    <div class="footer-app-ios-img">
+                        <div class="ios-img"><img src="img/app-store.png" class="img-fluid"></div>
+                        <div class="app-img"><img src="img/google-play-store.png" class="img-fluid"></div>
+                    </div>
+                </div>
+                <div class="footer-box posit-realt-foot-box">
+                    <div class="footer-header padding-bottom large-font-cust-size">Links</div>
+                    <div class="fotter-links pb-1">
+                        <a href="./index.html">Home</a>
+                    </div>
+                    <div class="fotter-links pb-1">
+                        <a href="#">About Us</a>
+                    </div>
+                    <div class="fotter-links pb-1">
+                        <a href="./product_listing.html">Products</a>
+                    </div>
+                    <div class="fotter-links pb-1">
+                        <a href="#">Services</a>
+                    </div>
+                    <div class="fotter-links pb-1">
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-box posit-realt-foot-box">
+                    <div class="footer-header padding-bottom large-font-cust-size">Services</div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Delivery Information</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Payments And Returns</a>
+                    </div>
+                </div>
+                <div class="footer-box posit-realt-foot-box">
+                    <div class="footer-header padding-bottom large-font-cust-size">My Account</div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">My Account</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Wish List</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Orders History</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Order Tracking</a>
+                    </div>
+                </div>
+                <div class="footer-box posit-realt-foot-box">
+                    <div class="footer-header padding-bottom large-font-cust-size">Contact Info</div>
+                    <div class="fotter-links pb-2 address-footer">
+                        K1/32, Rajapuri, <br> Opp, Dwarka Sec-5, <br> New Delhi-110059
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="mailto:info@electricoworld.com"><span><i class="fas fa-envelope"></i></span>
+                            info@electricoworld.com</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="tel:+91-9958924949"><span><i class="fas fa-phone-alt"></i></span> +91 99589 24949</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-down-copyright">
+                <div class="footer-logo text-center pb-1"><img src="img/footer-social-icons.png" class="img-fluid">
+                </div>
+                <p class="text-center copyright-text-footer">Copyright 2020 All rights Reserved</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="logic.js"></script>
+    <script>
+        function cartBtnColor(e) {
+            let absoluteCheckbox = e.querySelector('.absolute-checkbox-proDet');
+            let text = e.querySelector('.service-text');
+            absoluteCheckbox.classList.toggle('active');
+            if (e.classList.contains('jsColor')) {
+                e.classList.replace('jsColor', 'jsColorAdded');
+                // console.log(text);
+                text.innerText = 'Service Added';
+            } else {
+                e.classList.replace('jsColorAdded', 'jsColor')
+                text.innerText = 'Add to Cart';
+            }
+
+        }
+
+
+        // img zooming 
+        const img = document.getElementById('prodDetImg')
+        img.addEventListener('mousemove', (e)=>{
+            let width = img.offsetWidth;
+            let height = img.offsetHeight;
+            let mouseX = e.offsetX;
+            let mouseY = e.offsetY;
+
+            let bgPosX = (mouseX / width * 100);
+
+            let bgPosY = (mouseY / height *100);
+
+            img.style.backgroundPosition = `${bgPosX}% ${bgPosY}%`;
+        })
+        img.addEventListener('mouseleave', ()=>{
+            img.style.backgroundPosition = 'center';
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            // center: true,
+            // autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+        $('.custom-btns-next-slider').click(function () {
+            owl.trigger('next.owl.carousel');
+        })
+        $('.custom-btns-prev-slider').click(function () {
+            owl.trigger('prev.owl.carousel', [300]);
+        })
+    </script>
+</body>
+
+</html>
