@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <title>Electrico - Cart</title>
+    <title>Electrico - Order Placed</title>
 
     <!-- bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -28,11 +29,12 @@
 
     <!-- custom  -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body onload="PageLoaded()">
-       <!-- preLoader  -->
-       <div id="pre-loader">
+    <!-- preLoader  -->
+    <div id="pre-loader">
         <div class="pre-loading-img">
             <div class="loading-content">
                 <div class="loading-img">
@@ -144,256 +146,119 @@
         <img src="img/banner.png" class="img-fluid">
     </div>
 
-    <div class="pagination-product-listing container">
+    <!-- pagination  -->
+    <div class="pagination-product-listing container mb-5">
         <div class="prod-filter-home-list-para normal-large-font-cust">
-            Home Product <span><i class="fas fa-chevron-right"></i></span> Products <span><i
+            Home <span><i class="fas fa-chevron-right"></i></span> Products <span><i
                     class="fas fa-chevron-right"></i></span> Dalkin <span><i class="fas fa-chevron-right"></i></span>
-            Cart
+            Cart <span><i class="fas fa-chevron-right"></i></span> Billing <span><i
+                    class="fas fa-chevron-right"></i></span> Order Placed
         </div>
     </div>
 
+    <!-- heading  -->
+    <div class="container tracking-head">
+        <h3 class="all-large-heading pb-1 mb-0">Order Placed</h3>
+        <p class="p-0 m-0">Hi speed cooling with power saving</p>
+    </div>
 
-    <div class="container pt-3">
-        <div class="shopping-cart">
-            <div class="prod-details-top-head">
-                <h3 class="all-large-heading">Shopping Cart</h3>
-                <p class="large-font-cust-size">Hi speed cooling with power saving</p>
-            </div>
-            <div class="shopping-logo">
-                <!-- <img src="img/cart.png"> -->
-            </div>
+    <div class="container">
+        <div class="delivery-placed-img-big text-center mb-2">
+            <img src="img/copy1.png" class="img-fluid">
+        </div>
+        <div class="order-placed-long-img mb-2">
+            <img src="img/copy2.png" class="img-fluid">
         </div>
     </div>
 
-    <div class="cart-products">
-        <div class="container">
-            <div class="per-cart-box">
-                <div class="cart-product-img text-center">
-                    <img src="img/daikin.png" class="img-fluid">
-                </div>
-                <div class="product-cart-datails">
-                    <div class="prod-cart-heading">
-                        <h5 class="all-large-heading">Panasonic 1.5 Ton 5 Star Wi-Fi Twin Cool Inverter Split AC</h5>
-                    </div>
-                    <div class="prod-cart-price pb-4">
-                        <span class="cart-price-black">Price: </span><span class="cart-ruppe-sign">₹</span> <span class="head-color-price">25,999</span>
-                    </div>
-                    <div class="cart-stars">
-                        <img src="img/five-star.png">
-                    </div>
-                    <div class="cart-modal custom-font-size">
-                        Model FCVF-A / FCQN-E <br> Voltage: 230
-                    </div>
-                </div>
-                <div class="produc-cart-number">
-                    <div class="absolt-prod-cart">
-                        <div class="cart-numb">
-                            <span>
-                                <img src="img/minus.png" class="minus-cart">
-                                <span id="fromJSNum" class="jsNumCart"> 30 </span>
-                                <img src="img/plus.png" class="plus-cart" id="plus1">
-                            </span>
-                        </div>
-                        <div class="cart-del-wish">
-                            <div class="delete-cart text-center">
-                                <img src="img/delete-bin.png">
-                               <p class="p-0 m-0 custom-font-size">Remove</p>
-                            </div>
-                            <div class="delete-cart text-center">
-                                <img src="img/wish4.png">
-                               <p class="p-0 m-0 custom-font-size">Wishlist</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="per-cart-box mt-4">
-                <div class="cart-product-img text-center">
-                    <img src="img/daikin.png" class="img-fluid">
-                </div>
-                <div class="product-cart-datails">
-                    <div class="prod-cart-heading">
-                        <h5 class="all-large-heading">Panasonic 1.5 Ton 5 Star Wi-Fi Twin Cool Inverter Split AC</h5>
-                    </div>
-                    <div class="prod-cart-price pb-4">
-                        <span class="cart-price-black">Price: </span><span class="cart-ruppe-sign">₹</span> <span class="head-color-price">25,999</span>
-                    </div>
-                    <div class="cart-stars">
-                        <img src="img/five-star.png">
-                    </div>
-                    <div class="cart-modal custom-font-size">
-                        Model FCVF-A / FCQN-E <br> Voltage: 230
-                    </div>
-                </div>
-                <div class="produc-cart-number">
-                    <div class="absolt-prod-cart">
-                        <div class="cart-numb">
-                            <span>
-                                <img src="img/minus.png" class="minus-cart" id="minus2">
-                                <span id="fromJSNum2" class="jsNumCart"> 30 </span>
-                                <img src="img/plus.png" class="plus-cart" id="plus2" >
-                            </span>
-                        </div>
-                        <div class="cart-del-wish">
-                            <div class="delete-cart text-center">
-                                <img src="img/delete-bin.png">
-                               <p class="p-0 m-0 custom-font-size">Remove</p>
-                            </div>
-                            <div class="delete-cart text-center">
-                                <img src="img/wish4.png">
-                               <p class="p-0 m-0 custom-font-size">Wishlist</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container text-center">
+        <div class="order-succesful-heading">
+            <h3 class="all-large-heading">Order Succesfully Placed</h3>
+            <p class="p-0 m-0 c-plac-order-id">Order ID - 11651613</p>
+        </div>
+        <div class="Shoping-placed-btn mb-4 mt-3">
+            <button class="btns continue-shopping-btn">Continue Shopping</button>
+        </div>
+        <div class="tankyou-text">
+            <h3 class="thank-you-heading">Thank You For the Purchase</h3>
+        </div>
+        <p class="custom-font-size placeed-order-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. <br> Beatae voluptatem, itaque dicta</p>
+        <div class="order-succesful-heading mt-5 mb-4">
+            <h3 class="all-large-heading">Try Our Aftersales Services</h3>
         </div>
     </div>
 
-    <section class="cart-sub-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="coupon-box pb-4">
-                        <div class="coupon-img">
-                            <img src="img/cupon.png">
-                        </div>
-                        <div class="coupon-code">
-                            <p class="p-0 m-0">Add Discount Coupon Code*</p>
-                            <div class="coupon-input">
-                                <input type="text" placeholder="GD34ERGT">
-                                <div class="check-btn">
-                                    <button class="btns delivery-pin-btn cart-add-btn">Add Code</button>
-                                </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-1 col-md-12 col-sm-12"></div>
+            <div class="col-lg-10 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="per-services-placed">
+                            <div class="per-services-img-placed">
+                                <img src="img/technical-(1).png">
+                            </div>
+                            <div class="services-text-placed text-center">
+                                Instalation
                             </div>
                         </div>
                     </div>
-                    <h4 class="all-large-heading">Our Best Services</h4>
-                    <div class="cart-services">
-                        <div class="cart-per-service">
-                            <div class="cart-service-out-box">
-                                <div class="cart-service-img">
-                                    <img src="img/a2.png" >
-                                </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="per-services-placed">
+                            <div class="per-services-img-placed">
+                                <img src="img/warranty-(1).png">
                             </div>
-                        </div>
-                        <div class="cart-service-para">
-                            <div class="cart-details">
-                                Extended Warrenty 2 Year by Electrico Product <br> 2 year | ₹2,199
-                            </div>
-                            <div class="cart-button pt-3">
-                                <button class="btns delivery-pin-btn ">Add to Cart</button>
+                            <div class="services-text-placed text-center">
+                                Service
                             </div>
                         </div>
                     </div>
-                    <div class="cart-services">
-                        <div class="cart-per-service">
-                            <div class="cart-service-out-box">
-                                <div class="cart-service-img">
-                                    <img src="img/a1.png" >
-                                </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="per-services-placed">
+                            <div class="per-services-img-placed">
+                                <img src="img/file.png">
                             </div>
-                        </div>
-                        <div class="cart-service-para">
-                            <div class="cart-details">
-                                Extended Warrenty 2 Year by Electrico Product <br> 2 year | ₹2,199
-                            </div>
-                            <div class="cart-button pt-3">
-                                <button class="btns delivery-pin-btn cart-add-btn">Add to Cart</button>
+                            <div class="services-text-placed text-center">
+                                Ext. Warrenty
                             </div>
                         </div>
                     </div>
-                    <div class="cart-services">
-                        <div class="cart-per-service">
-                            <div class="cart-service-out-box">
-                                <div class="cart-service-img">
-                                    <img src="img/a4.png" >
-                                </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="per-services-placed">
+                            <div class="per-services-img-placed">
+                                <img src="img/maintenance.png">
                             </div>
-                        </div>
-                        <div class="cart-service-para">
-                            <div class="cart-details">
-                                Extended Warrenty 2 Year by Electrico Product <br> 2 year | ₹2,199
-                            </div>
-                            <div class="cart-button pt-3">
-                                <button class="btns delivery-pin-btn cart-add-btn">Add to Cart</button>
+                            <div class="services-text-placed text-center">
+                                AMC
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="secure-payments">
-                        <img src="img/safe.png"> <span class="cart-secure-text custom-font-size">Save and Sequre Payments , Easy returns. 100% Authentic Products</span>
-                    </div>
-                    <div class="car-per-amount-box">
-                        <div class="amountName">
-                            Sub Total
-                        </div>
-                        <div class="mid-space-dot">
-
-                        </div>
-                        <div class="actual-amount">
-                            <span class="cart-ruppe-sign">₹</span> 1,83,459.00
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="per-services-placed">
+                            <div class="per-services-img-placed">
+                                <img src="img/piping1.png">
+                            </div>
+                            <div class="services-text-placed text-center">
+                                Piping
+                            </div>
                         </div>
                     </div>
-                    <div class="car-per-amount-box pt-3">
-                        <div class="amountName">
-                            Discount
-                        </div>
-                        <div class="mid-space-dot">
-
-                        </div>
-                        <div class="actual-amount">
-                            <span class="cart-ruppe-sign">₹</span> 23,459.00
-                        </div>
-                    </div>
-                    <div class="car-per-amount-box pb-1 pt-3">
-                        <div class="amountName">
-                            Coupon Discount
-                        </div>
-                        <div class="mid-space-dot">
-
-                        </div>
-                        <div class="actual-amount">
-                            <span class="cart-ruppe-sign">₹</span> 2,789.00
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="per-services-placed">
+                            <div class="per-services-img-placed">
+                                <img src="img/consulting.png">
+                            </div>
+                            <div class="services-text-placed text-center">
+                                HVAC
+                            </div>
                         </div>
                     </div>
-                    <p class="p-0 m-0 cart-saving-para custom-font-size">You Saved <span class="green-text-color">₹3,199</span> by Applying Coupon Code</p>
-                    <div class="car-per-amount-box pt-3 pb-5">
-                        <div class="amountName">
-                            Shipping
-                        </div>
-                        <div class="mid-space-dot">
-
-                        </div>
-                        <div class="actual-amount">
-                            <span class="cart-ruppe-sign">₹</span> 2,789.00
-                        </div>
-                    </div>
-
-                    <div class="total-Amount-box">
-                        <div class="total-amount">
-                            <h5 class="all-large-heading p-0 m-0">
-                                Total Amount
-                            </h5>
-                            <p class="p-0 m-0 custom-font-size">Inclusive of all Taxes & GST*</p>
-                        </div>
-                        <div class="amount">
-                                <h5 class="all-large-heading"><span class="cart-ruppe-sign">₹</span> 1,63,369.00</h5>
-                        </div>
-                    </div>
-                    <div class="checkout-bton">
-                        <a href="./checkout.html">
-                            <button class="btns checkout-button">Continue to Checkout</button>
-                        </a>
-                    </div>
-                    <div class="saving-msg text-center pt-3 extra-large-font-cust-size">You will save ₹ 14,356 on this Order</div>
+                    
                 </div>
             </div>
+            <div class="col-lg-1 col-md-12 col-sm-12"></div>
         </div>
-    </section>
-
-
+    </div>
 
     <!-- product-slider  -->
     <section class="product-slider">
@@ -697,29 +562,7 @@
         </div>
     </section>
 
-
     <script src="logic.js"></script>
-
-    <script>
-        let plusCart = document.querySelectorAll('.plus-cart');
-        let minusCart = document.querySelectorAll('.minus-cart');
-        plusCart.forEach((e,i)=>{
-            e.addEventListener('click', ()=>{
-                let spanNum2 = e.parentNode.querySelector('.jsNumCart')
-                let changeNum = parseFloat(spanNum2.innerText)
-                changeNum = changeNum + 1;
-                spanNum2.innerText = changeNum;
-            })
-        })
-        minusCart.forEach((m,j)=>{
-            m.addEventListener('click', ()=>{
-            let spanNum = m.parentNode.querySelector('.jsNumCart')
-            let changeNum = parseFloat(spanNum.innerText);
-            changeNum = changeNum - 1;
-            spanNum.innerText = changeNum; 
-            })
-        })
-    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -755,6 +598,7 @@
             owl.trigger('prev.owl.carousel', [300]);
         })
     </script>
+
 </body>
 
 </html>
