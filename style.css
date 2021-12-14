@@ -55,6 +55,9 @@ a:hover{
     font-size: 16px;
     color: var(--large-heading-color);
 }
+.cust-font-fifteen{
+    font-size: 15px;
+}
 .all-large-heading{
     font-weight: bold;
     color: var(--large-heading-color);
@@ -1523,6 +1526,81 @@ del span{
 }
 
 
+/* contact Us Page  */
+.addrr-Cont-us-icon i{
+    font-size: 2rem;
+    color: var(--large-heading-color);
+    padding: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--large-heading-color);
+}
+.Contact-Us-Head{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact-Us-Para{
+    color: var(--faded-text-color);
+}
+.per-address-box-contact-us{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--boxes-faded-bg-color);
+}
+.addrr-phone-Cont-us-icon i{
+ padding: 20px 26px;
+}
+.per-address-box-contact-us{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.per-address-box-contact-us:hover > .addrr-Cont-us-icon i{
+    background-color: var(--large-heading-color);
+    color: var(--web-white-colore-code);
+    transition: all 0.5s ease-in-out;
+}
+.area-locationIframe iframe{
+    height: 460px;
+    width: 100%;
+}
+.contactPage-heading p{
+    color: var(--faded-text-color);
+}
+.page-navigation-whole-bg{
+    padding-top: .5rem;
+    padding-bottom: 1.4rem;
+    /* background-color: var(--boxes-faded-bg-color); */
+    background-color: var(--extra-faded-bg-color-cust);
+}
+
+
+/* about Us  */
+.testimonials-description p, .about-us-para-box p{
+    color: var(--faded-text-color);
+    font-size: 14px;
+}
+.about-us-para-box li{
+    color: var(--faded-text-color);
+    font-size: 14px;
+}
+.about-us-para-box ol{
+    padding-left: .9rem;
+}
+.client-reviews-img img{
+    max-width: 60px;
+}
+.testimonial-img-text{
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+.clienReviews{
+    background-color: var(--boxes-faded-bg-color);
+}
+.testimonials-flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 @media(max-width: 1200px){

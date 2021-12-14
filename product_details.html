@@ -166,16 +166,16 @@
                         
                     </div>
                     <div class="other-product-of-prodDet pt-2">
-                        <div class="prod-det-other">
+                        <div class="prod-det-other" id="0" onclick="ProdDetailImgChange(this.id)">
                             <img src="img/a6.png">
                         </div>
-                        <div class="prod-det-other">
+                        <div class="prod-det-other" id="1" onclick="ProdDetailImgChange(this.id)">
                             <img src="img/a6.png">
                         </div>
-                        <div class="prod-det-other">
+                        <div class="prod-det-other" id="2" onclick="ProdDetailImgChange(this.id)">
                             <img src="img/a6.png">
                         </div>
-                        <div class="prod-det-other">
+                        <div class="prod-det-other" id="3" onclick="ProdDetailImgChange(this.id)">
                             <img src="img/a6.png">
                         </div>
                     </div>
@@ -644,15 +644,9 @@
             <div class="footer-down-copyright">
                 <div class="footer-logo text-center pb-1">
                     <div class="facebook">
-                        <a href="https://www.facebook.com/search/top?q=electrico">
+                        <a href="https://www.facebook.com/ElectriCoWorld">
                             <img src="img/facebook.png" />
                         </a>
-                    </div>
-                    <div>
-                        <img src="img/tweet.png" alt="">
-                    </div>
-                    <div>
-                        <img src="img/youtube.png" alt="">
                     </div>
                     <div>
                         <a href="https://www.instagram.com/electricoworld/">
@@ -681,6 +675,16 @@
                 text.innerText = 'Add to Cart';
             }
 
+        }
+
+        let ImgArr = ['img/ac-with-google.png', 'img/jsImg2.png', 'img/jsImg3.png', 'img/jsImg4.png']
+        function ProdDetailImgChange(ID){
+            let IMAGE = document.getElementById('prodDetImg')
+            ImgArr.forEach((e,i)=>{
+                if(ID == i){
+                    IMAGE.style.backgroundImage = `url('${e}')`
+                }
+            })
         }
 
 
