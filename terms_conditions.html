@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <title>Electrico - Terms & Conditions</title>
+
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- fontawsome  -->
+    <script src="https://kit.fontawesome.com/a16f8ee6e2.js" crossorigin="anonymous"></script>
+    <!-- custom  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="PageLoaded()">
+     <!-- preLoader  -->
+     <div id="pre-loader">
+        <div class="pre-loading-img">
+            <div class="loading-content">
+                <div class="loading-img">
+                    <img src="img/logo.png">
+                </div>
+                <div class="loading-animation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header  -->
+    <div class="whole-header">
+        <div class="upper-header container">
+            <div class="main-logo header-left-content">
+                <a href="./index.html"><img src="img/logo.png" alt="img"></a>
+            </div>
+            <div class="header-right-content">
+                <div class="mobile-head-bar" id="mobile-header-bar">
+                    <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="header-right-box" id="header-right-box-toggle">
+                    <div class="header-search-btn">
+                        <div class="search-input">
+                            <input type="text" id="header-search-input" placeholder="Search">
+                            <span class="search-img"><img src="img/search.png"></span>
+                        </div>
+                    </div>
+                    <div class="header-phone-number">
+                        <a href="tel:+91-9958924949">
+                            <img src="img/phone-icon.png"> <span> +91 9958924949 </span>
+                        </a>
+                    </div>
+                    <div class="download-app-header">
+                        <span class="download-para custom-font-size">Download App</span>
+                        <img src="img/apple.png">
+                        <img src="img/android.png">
+                    </div>
+                    <div class="header-log-in-wish-cart">
+                        <div class="log-in text-center">
+                            <div class="login-img"><img src="img/log-in.png"></div>
+                            <div class="login-text custom-font-size">Login/Register</div>
+                        </div>
+                        <div class="wishlist text-center">
+                            <div class="wishlist-img"><img src="img/wish-list.png" class="custom-margin-b"></div>
+                            <div class="wishlist-text custom-font-size">Wishlist</div>
+                        </div>
+                        <div class="header-cart text-center">
+                            <a href="./cart.html">
+                                <div class="cart-img"><img src="img/cart.png" class="custom-margin-b"></div>
+                                <div class="cart-text custom-font-size">Cart</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container lower-header-box">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="bootstrap-nav-container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bootstrap-navbar" id="navbarSupportedContent">
+                        <div class="bootstrap-nav">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about_us.html">ABOUT US</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        PRODUCTS
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        SERVICES
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact_us.html">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <section class="page-navigation-whole-bg">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-12">
+                    <div class="contactPage-heading">
+                        <h3 class="all-large-heading">Terms & Conditions</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="prod-filter-home-list-para normal-large-font-cust">
+                        Home <span><i class="fas fa-chevron-right"></i></span> Terms & Conditions
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- terms&cond main  -->
+    <div class="container mt-5">
+        <div class="privacy-policy-header-bold mb-4">TERMS OF USE
+        </div>
+        <div class="about-us-para-box mb-4">
+            <p>
+                This document is an electronic record in terms of Information Technology Act, 2000 and rules there under as applicable and the amended provisions pertaining to electronic records in various statutes as amended by the Information Technology Act, 2000. This electronic record is generated by a computer system and does not require any physical or digital signatures. Welcome to the Electrico World, brought to you by Electrico World In using the Electrico World service, of Electrico World you are deemed to have accepted the terms and conditions listed below.
+            </p>
+        </div>
+        <div class="about-us-para-box mb-4">
+            <p>
+                The domain name Electrico World (hereinafter referred to as "Website") is registered in the name of Electrico World a company incorporated under the Companies Act, 1995 (The 35th year of Success )with its registered office in New Delhi.
+            </p>
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                The logo/image of Electrico World the home page of the website & other pages and as used in the communication to the User is registered by Electrico World and cannot be used or communicated or distributed without the specific and written permission of Electrico World.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Membership Eligibility
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                Visitor agrees to be financially responsible for all of Visitor's use of the services and access of the Website (as well as for use of User's account by others, including without limitation minors living with User). Visitor warrants that all information supplied by them in using the services and accessing the Website, including without limitation User's name, email address, street address, telephone number, mobile number, credit/debit card and/ or any other payment instrument number and other payment details is correct and accurate. Failure to provide accurate information may subject the User to civil and criminal penalties. This Agreement is void where prohibited by law, and the right to access the Website is revoked in such jurisdictions.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Modified Terms
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                Electrico World serves the right at all times to discontinue or modify any of the Terms and Conditions and/or the Privacy Policy as may be deemed necessary or desirable without prior notification to you. Such changes may include, among other things, the adding of certain fees or charges. We suggest to you, therefore, that you re-read this important notice containing our Terms and Conditions and Privacy Policy from time to time in order that you stay informed as to any such changes. If we make changes to our Terms and Conditions and Privacy Policy and you continue to use our Site, you are impliedly agreeing to the Terms and Conditions and Privacy Policy expressed herein. Any such deletions or modifications shall be effective immediately upon Electrico World posting thereof. Any use of Electrico World by End User after such notice shall be deemed to constitute acceptance by End User of such modifications.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-3">User Account and Registration Obligations
+        </div>
+        <div class="about-us-para-box mb-4">
+            <p>
+                If you use the Website, user shall be responsible for maintaining the confidentiality of your User ID and Password and you shall be responsible for all activities that occur under your User ID and Password. You agree that if you provide any information that is untrue, inaccurate, not current or incomplete or We have reasonable grounds to suspect that such information is untrue, inaccurate, not current or incomplete, or not in accordance with the this Terms of Use, We shall have the right to indefinitely suspend or terminate or block access of your membership on the Website and refuse to provide You with access to the Website.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-3">You also agree to:
+        </div>
+        <div class="about-us-para-box mb-4">
+            <p>
+                Provide true, accurate, current and complete information about yourself as prompted by Electrico World registration form (such information being the "Registration Data"). All the information which compulsorily needs to be filled are marked in asterix (*) sign.
+            </p>
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                Maintain and promptly update the Registration Data to keep it true, accurate, current and complete. If you provide any information that is untrue, inaccurate, incomplete, or not current or if Electrico World. In has a reasonable ground to suspect that such information is untrue, inaccurate, and not current or not in accordance with the User Agreement, www.electricoworld.com has the right to indefinitely suspend or terminate user membership and refuse to provide you with access to the Site.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-3">Reviews, Comments, Communications, and other Contents
+        </div>
+        <div class="about-us-para-box mb-4">
+            <p>
+                Visitors may post reviews, comments, and other content; and submit suggestions, ideas, comments, questions, or other information, so long as the content is not illegal, obscene, threatening, defamatory, invasive of privacy, infringing on intellectual property rights, or otherwise injurious to third parties or objectionable and does not consist of or contain software viruses, political campaigning, commercial solicitation, chain letters, mass mailings, or any form of "spam." You may not use a false e-mail address, impersonate any person or entity, or otherwise mislead as to the origin of a card or other content. Electrico World serves the right (but not the obligation) to remove or edit such content, but does not regularly review posted content.
+            </p>
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                If you do post content or submit material, and unless we indicate otherwise, you grant Electrico World and its affiliates a nonexclusive, royalty-free, perpetual, irrevocable, and fully sub-licensable right to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content throughout the world in any media. You grant Electrico World and its affiliates and sub-license the right to use the name that you submit in connection with such content, if they choose. You represent and warrant that you own or otherwise control all of the rights to the content that you post; that the content is accurate; that use of the content you supply does not violate this policy and will not cause harassment to any person or entity; and that you will indemnify Electrico World its affiliates for all claims resulting from content you supply.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Charges
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                Registration on this Website is free. There is no charge or fee for browsing and buying products on the Website. However we reserve the right to charge fee and change its policies from time to time. In particular, we may at our sole discretion introduce new services and modify some or all of the existing services offered on the Website. In such an event, we reserves, without notice to user, the rights to introduce fees for the new services offered or amend/introduce fees for existing services, as the case may be. Changes to the fee and related policies shall automatically become effective immediately once implemented on the website. Unless otherwise stated, all fees shall be quoted in Indian Rupees. You shall be solely responsible for compliance of all applicable laws including those in India for making payments to us.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Suspension due to Non-Compliance with Agreement
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                Not with standing other legal remedies that may be available to Electrico World, Electrico World may in its sole discretion limit customer activity by immediately removing customer listing either temporarily or indefinitely or suspend or terminate user membership, and/or refuse to provide user with access to the site if: The user is in breach any of the terms and conditions of this agreement and/or the terms and conditions of usage of Electrico World; The user has provided wrong, inaccurate, incomplete or incorrect information; The user attempts to defraud Electrico World by using the functionalities on the website; your actions may cause any harm, damage or loss to the other users or Electrico World; illegal and/or unauthorized use of the service, including unauthorized framing of or linking to the Electrico World site will be investigated, and appropriate legal action will be taken, including without limitation, civil, criminal and injunctive redress.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">End User Conduct
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                Monitoring This Site and any individual sites or merchant-specific, city-specific, or state-specific sites now or hereinafter contained within or otherwise available through external hyperlinks with our Site (the "Microsites") are private property. All interactions on this website and/or the Microsites must comply with these Terms and Conditions. Although we welcome and encourage user interaction on our site, we do insist and require that all end users restrict any and all activity in connection with the use of this site and the Microsites to that which involves lawful purposes only. End-user shall not post or transmit through this Site any material which violates or infringes in any way upon the rights of others, or any material which is unlawful, threatening, abusive, defamatory, invasive of privacy or publicity rights, vulgar, obscene, profane or otherwise objectionable, which encourages conduct that would constitute a criminal offense, give rise to civil liability or otherwise violate any law, or which, without Electrico World express prior, written approval, contains advertising or any solicitation with respect to products or services. Any conduct by an End User that in Electrico World exclusive discretion restricts or inhibits any other End User from using or enjoying this Site and/or any of the Microsites is strictly prohibited. End-User shall not use this Site or any of the Microsites to advertise or perform any commercial, religious, political or non-commercial solicitation, including, but not limited to, the solicitation of users of this Site and/or the Microsites to become users of other on- or offline services directly or indirectly competitive or potentially competitive with Electrico World. Electrico World shall have the right, but not the obligation, to monitor the content of the Site at all times, including any chat rooms and forums that may hereinafter be included as part of the Site, to determine compliance with this Agreement and any operating rules established by Electrico World, as well as to satisfy any applicable law, regulation or authorized government request. Without limiting the foregoing, Electrico World shall have the right to remove any material that Electrico World, in its sole discretion, finds to be in violation of the provisions hereof or otherwise objectionable.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Product Description
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                Electrico World and its affiliates attempt to be as accurate as possible. However, Electrico World does not assure that product description or other content or prices/amounts of this site are accurate, complete, reliable, current, or error-free. If a product offered by Electrico World itself is not as described, your sole remedy is to return it in unused condition.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Pricing
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                Except where noted otherwise, the Selling Price/ Electrico World price/MRP/MOP/List Price displayed for products on our website represents the full retail price listed on the product itself, suggested /offered by the manufacturer or supplier, or estimated in accordance with standard industry practice; or the estimated retail value for a comparably featured item offered elsewhere. The Selling Price/ Electrico World price/MRP/MOP/List Price is a comparative price estimate and may or may not represent the prevailing price in every area on any particular day. For certain items that are offered as a set/pack/combo/arrangement, the Selling Price/List Price/ Electrico World price may represent "offer/deal" prices, which mean the aggregate of the manufacturer's estimated or suggested retail price for each of the items included in the set/pack/combo/arrangement. The final price that will be applicable to a user for purchase and payment will be as per the price that is displayed in the shopping cart of the customer which can be inclusive or exclusive of any other charges in terms of the usage of the website.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Payment Terms
+        </div>
+        <div class="about-us-para-box mb-4">
+            <p>
+                Customer shall be entitled to use his/her valid credit/debit and/ or any other payment cards, online banking facility to make payment against any transaction being effected at www.electricoworld.com Customer shall be bound to use his/her own credit/debit and/ or any other payment cards, online banking accounts to make any payment. User undertakes and confirms that he/she would furnish correct, complete and accurate detail of credit/debit and/ or any other payment cards, online banking accounts and shall be solely responsible for any cost, expense, loss and/or damage which may suffer to user due to furnishing of wrong detail/ information relating to his/her credit / debit and/ or any other payment cards or online banking accounts.
+            </p>
+        </div>
+        <div class="about-us-para-box mb-4">
+            <p>
+                User expressly agrees and declares that the Company shall not be liable for the loss of any nature whatsoever including without limitation indirect, consequential, special and/ or incidental to the User arising, directly or indirectly, out of decline of authorization for any transaction, resulting from the User exceeding his/ her preset permissible payment limit under the credit / debit and/ or any other payment cards and/ or online banking accounts.
+            </p>
+        </div>
+        <div class="about-us-para-box mb-4">
+            <p>
+                The Company confirms that the detail provided by User in this regard shall be kept confidential and shall not be disclosed to any third party except to the extent required under the rules of any stock exchange and/or by applicable laws, regulations and/or processes of any government authority and/or in connection with any judicial process regarding any legal action, suit and/or proceeding arising out of and/or relating to this Agreement.
+            </p>
+        </div>
+        <div class="about-us-para-box mb-4">
+            <p>
+                Further, the Company actively reports and prosecutes actual and suspected credit/ debit/ cash card fraud. The Company may require further authorization from User such as a telephone confirmation of User's order and/or other information. The Company's decision to require further authorization is at the Company's sole discretion. The Company reserves the right to cancel, delay, refuse to deliver, or recall from the carrier any order if fraud is suspected.
+            </p>
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                The Company captures certain information during the order process, including time, date, IP address, and other information that will be used to locate and identify individuals committing fraud. If an order is suspected to be fraudulent, all records will be submitted with or without a subpoena to all law enforcement agencies and to the credit/ debit/ cash card company for fraud investigation. The Company will cooperate with authorities to prosecute offenders to the full extent of the law. The Company shall take all reasonable precautions to protect the information provided by the User. However, it is expressly provided and accepted by the User that the Company shall not be responsible in any manner whatsoever for any third-party action which results in the information provided by the User being exposed and/or misused by such third party who accessed such information without any authorization from the Company.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Warranty Disclaimer
+        </div>
+        <div class="about-us-para-box mb-4">
+            <p>
+                User acknowledges that the Company has no control over, and no duty to take any action regarding which User gain access to the Website and/ or services; what Products, content User accesses and/ or uploads, posts, emails, transmits and/ or otherwise contribute via the Website and/ or services; what effects the Products, content may have on User and/ or any third party; how User may interpret and/or use the Products and/or what actions User may take as a result of having been exposed to the Products and/or content. User releases the Company from all liability for User having acquired or not acquired Products, content through the Website and/ or services. The Website and/ or services may contain, or direct User to sites and/ or services containing, information that some people may find offensive and/or inappropriate. The Company makes no representations concerning any content contained in or accessed through these websites and/ or services, and the Company will not be responsible or liable for the accuracy, copyright compliance, legality or decency, or durability of the products, material contained in, or accessed or purchased through these websites and/ or services. The services, products, materials, information, content, Website and/ or any software are provided on an "as is" and "as available" basis, without warranties of any kind, either express or implied, including, without limitation, implied warranties of merchantability, fitness for a particular purpose or non-infringement except as provided in the Warranty Terms of the said Products given by respective manufacturer of the said Products.
+            </p>
+        </div>
+        <div class="about-us-para-box mb-4">
+            <p>
+                Some of the states do not allow limitations on how long an implied warranty lasts, so the above limitations may not apply to users.
+            </p>
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                Although the Company has taken adequate safeguard, the Company makes no guaranty of confidentiality and/or privacy of any communication or information transmitted on the Website and/ or for the services and/or any website linked to the Website. Users uses this Website and/ or services at his/ her own risk in accordance with our privacy policy.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Cancellation of order
+        </div>
+
+        <div class="about-us-para-box mb-4">
+            <p>
+                Electrico World serves the right to cancel any order without any explanation for doing so, under situation wher Electrico World is not able to meet the requirement of the order placed or order so placed/canceled does not comply with the Electrico World policy or for any other reason. However, www.electricoworld.com will ensure that any communication of cancellation of an order, so canceled, is intimated within appropriate time to the concerned person and any applicable refund will be made in a reasonable time.
+            </p>
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                Also if your order is canceled after your credit/debit card has been charged, the said amount will be credited back in your Card Account/Net banking account.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Risk of loss
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                All items purchased on the Website are made pursuant to a shipment contract. This means that the risk of loss and title for such items pass to the customer is upon our delivery to the carrier.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Colours
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                We have made every effort to display the exact colours of the products that appear on the portal as accurately as possible. However, as the actual colours you see will depend on your monitor, we cannot guarantee that your monitor's display of any colours will be accurate.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Images
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                We strive hard to get the real image of every product listed, but it should be considered indicative only.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Billing
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                The price of our merchandise is inclusive of the VAT. The vat charged shall depend upon the destination where the order has to be shipped. The tax rate applied to the order will be the combined tax rate for both state and local tax rates in accordance with the address where the order is being shipped.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">DOA Policy
+        </div>
+        <div class="about-us-para-box mb-4">
+            <p>
+                For units installed beyond the municipal limits of the jurisdiction of the company's Authorised Service Centre, it is the responsibility of the customer to contact the nearest authorized service center and bring the unit to the authorized service center at purchaser's cost and risk.
+            </p>
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                In case if any customer is facing the problem for any kind of service from company's side, then feel free to contact our customer service department who will coordinate with the company from customer's hand and resolve the issue.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Cash On Delivery Orders
+        </div>
+        <div class="about-us-para-box mb-4">
+            <p>
+                *Cash-on-Delivery (C-o-D) is an alternate method of purchasing from us, other than online payment (by Credit/Debit card). At the time of delivery, you need to pay the cash before the package is handed over. When you choose C-o-D as a method of payment, it is mandatory for you to provide a landline number/mobile. Customers will receive a confirmatory call by customer care on the landline/mobile number provided. COD order will be processed only after the customer has confirmed the order on this call by Customer Care.
+            </p>
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                www.electricoworld.com will make three attempts to establish contact with you on the landline/mobile number provided by you at the time of placing the order. In case of failure of confirmation of order after 3 attempts, the order will be canceled and email notifying cancellation will be sent to the customer. Order will not be processed till successfully confirmed *C-o-D facility is available for Delhi/NCR customers only.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Jurisdictional Issues/Sale in India Only
+        </div>
+        <div class="about-us-para-box mb-3">
+            <p>
+                Unless otherwise specified, the material on the Website is presented solely for the purpose of sale in India. We make no representation that materials in the website are appropriate or available for use in other locations/Countries other than India. Those who choose to access this site from other locations/Countries other than India do so on their own initiative and we are not responsible for the supply of goods/refund for the goods ordered from other locations/Countries other than India, compliance with local laws, if and to the extent local laws are applicable.
+            </p>
+        </div>
+        <hr>
+        <div class="privacy-policy-header-bold mb-4">Communication with Users
+        </div>
+        <div class="about-us-para-box mb-4 pb-2">
+            <p>
+                www.electricoworld.com reserves the right to communicate with Users regarding this site and the user's use of this site or any product or service purchased by the user on this site.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- newletter  -->
+    <section class="newsletter padding-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="newltr-left-box">
+                        <div class="newsltr-img">
+                            <img src="img/news-letter.png" class="img-fluid">
+                        </div>
+                        <div class="newltr-para-head">
+                            <h3 class="all-large-heading">Subscribe To Our Newsletter</h3>
+                            <p class="padding-bottom custom-font-size-color">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="newltr-sub-btn">
+                        <div class="news-letter-input"><input type="text" id="news-ltr-input"
+                                placeholder="Enter Email ID"></div>
+                        <div class="newltr-btn"><button class="btns newlts-btns">Submit</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <section class="footer">
+        <div class="container padding-top">
+            <div class="footer-content">
+                <div class="footer-box">
+                    <div class="footer-header-img pb-2">
+                        <div class="fotter-img"><img src="img/footer-logo.png"></div>
+                    </div>
+                    <div class="footer-text normal-large-font-cust pb-2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quis non porro nobis corrupti
+                        ipsum similique nisi, eligendi optio recusandae tempore exercitationem. Quam corrupti dolore
+                        sint atque, molestiae reici.
+                    </div>
+                    <div class="footer-app-ios-img">
+                        <div class="ios-img"><img src="img/app-store.png" class="img-fluid"></div>
+                        <div class="app-img"><img src="img/google-play-store.png" class="img-fluid"></div>
+                    </div>
+                </div>
+                <div class="footer-box posit-realt-foot-box">
+                    <div class="footer-header padding-bottom large-font-cust-size">Links</div>
+                    <div class="fotter-links pb-1">
+                        <a href="./index.html">Home</a>
+                    </div>
+                    <div class="fotter-links pb-1">
+                        <a href="./about_us.html">About Us</a>
+                    </div>
+                    <div class="fotter-links pb-1">
+                        <a href="./product_listing.html">Products</a>
+                    </div>
+                    <div class="fotter-links pb-1">
+                        <a href="#">Services</a>
+                    </div>
+                    <div class="fotter-links pb-1">
+                        <a href="./contact_us.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-box posit-realt-foot-box">
+                    <div class="footer-header padding-bottom large-font-cust-size">Services</div>
+                    <div class="fotter-links pb-2">
+                        <a href="./terms_conditions.html">Terms & Conditions</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="./privacy_policy.html">Privacy Policy</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="./delivery_information.html">Delivery Information</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="./payment_returns.html">Payments And Returns</a>
+                    </div>
+                </div>
+                <div class="footer-box posit-realt-foot-box">
+                    <div class="footer-header padding-bottom large-font-cust-size">My Account</div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">My Account</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Wish List</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="#">Orders History</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="./delivery_tracking.html">Order Tracking</a>
+                    </div>
+                </div>
+                <div class="footer-box posit-realt-foot-box">
+                    <div class="footer-header padding-bottom large-font-cust-size">Contact Info</div>
+                    <div class="fotter-links pb-2 address-footer">
+                        K1/32, Rajapuri, <br> Opp, Dwarka Sec-5, <br> New Delhi-110059
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="mailto:info@electricoworld.com"><span><i class="fas fa-envelope"></i></span>
+                            info@electricoworld.com</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="tel:+91-9958924949"><span><i class="fas fa-phone-alt"></i></span> +91 99589 24949</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-down-copyright">
+                <div class="footer-logo text-center pb-1">
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/ElectriCoWorld" target="_blank">
+                            <img src="img/facebook.png" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/electricoworld/" target="_blank">
+                            <img src="img/instagram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <p class="text-center copyright-text-footer">Copyright 2021 All Rights Reserved</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="logic.js"></script>
+
+</body>
+
+</html>

@@ -42,6 +42,9 @@ a{
 a:hover{
     color: var(--web-whole-color);
 }
+.header-phone-number a:hover{
+    color: var(--faded-text-color);
+}
 .padding-top{
     padding-top: 20px;
 }
@@ -273,6 +276,34 @@ bottom: -1.5rem;
     height: 1.5em;
 }
 
+
+
+/* SLIDER-CONTAINER-CUSTOM */
+.SliderCustomRelative{
+    position: absolute;
+    top: 12.3vh;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.SLIDER-CONTAINER-CUSTOM{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    box-shadow:var(--box-shadow-head-feat);
+    background: white;
+    border-radius: 6px;
+}
+.SliderCustomRelative.CustZIndex{
+    z-index: 1;
+}
+.sLiDErIteM.active{
+    color: white;
+    background-color: var(--web-whole-color);
+    padding: 2px 10px;
+    border-radius: 20px;
+}
 
 
 /* main  */
@@ -1520,9 +1551,15 @@ del span{
 .per-services-placed:hover{
     background: linear-gradient(to right, var(--web-whole-color), var(--hover-bg-color-deep-blue));
 }
+.per-services-placed:hover > .services-text-placed{
+    color: var(--web-white-colore-code);
+}
 .services-text-placed{
     font-size: 21px;
     color: var(--faded-text-color);
+}
+.delivery-placed-img-big img{
+    max-width: 400px;
 }
 
 
@@ -1570,6 +1607,12 @@ del span{
     padding-bottom: 1.4rem;
     /* background-color: var(--boxes-faded-bg-color); */
     background-color: var(--extra-faded-bg-color-cust);
+}
+.contact-Us-Para a{
+    color: var(--faded-text-color);
+}
+.contact-Us-Para a:hover{
+    color: var(--hover-bg-color-deep-blue);
 }
 
 
@@ -1786,6 +1829,11 @@ del span{
     .checkout-right-box{
         margin-bottom: 3rem;
     }
+
+    /* contact us  */
+    .area-locationIframe{
+        margin-top: 20px;
+    }
 }
 
 @media(max-width: 800px){
@@ -1921,6 +1969,9 @@ del span{
     .air-cond-headinmg{
         margin-top: 3.5rem;
     }
+    .sLiDErIteM{
+        font-size: 12px;
+    }
     /* home ends  */
     .continue-shopping-btn{
         padding: .5rem;
@@ -1935,6 +1986,11 @@ del span{
     /* checkout-page  */
     .saving-addres-checkout {
         grid-template-columns: repeat(2, auto);
+    }
+
+    /* order place  */
+    .delivery-placed-img-big img{
+        max-width: 300px;
     }
 }
 
@@ -1959,6 +2015,10 @@ del span{
     }
 }
 @media(max-width: 418px){
+    /* home  */
+    .sLiDErIteM{
+        font-size: 10px;
+    }
     /* tracking  */
     .progress-bar-ul li::before{
         top: 67%;
@@ -1977,6 +2037,11 @@ del span{
     }
     .progress-bar-ul li{
         font-size: 7px;
+    }
+
+    /* order place  */
+    .delivery-placed-img-big img{
+        max-width: 250px;
     }
 }
 
