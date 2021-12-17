@@ -11,6 +11,16 @@ function PageLoaded() {
 }
 
 
+let SerchInput = document.querySelector('#header-search-input');
+function mouseEnter(){
+    SerchInput.classList.add('whiteSearch');
+}
+function mouseLeave(){
+    SerchInput.classList.remove('whiteSearch')
+}
+// function searchInoutClick(){
+//     SerchInput.classList.toggle('whiteSearch')
+// }
 
 // text-slider
 // let count = 0;

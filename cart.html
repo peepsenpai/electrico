@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,8 +32,8 @@
 </head>
 
 <body onload="PageLoaded()">
-       <!-- preLoader  -->
-       <div id="pre-loader">
+    <!-- preLoader  -->
+    <div id="pre-loader">
         <div class="pre-loading-img">
             <div class="loading-content">
                 <div class="loading-img">
@@ -60,12 +61,13 @@
                 <div class="header-right-box" id="header-right-box-toggle">
                     <div class="header-search-btn">
                         <div class="search-input">
-                            <input type="text" id="header-search-input" placeholder="Search">
-                            <span class="search-img"><img src="img/search.png"></span>
+                            <input type="text" id="header-search-input" placeholder="Search" onmouseenter="mouseEnter()"
+                                onmouseleave="mouseLeave()"">
+                            <span class=" search-img"><img src="img/search.png"></span>
                         </div>
                     </div>
                     <div class="header-phone-number">
-                        <a href="tel:+91-9958924949">
+                        <a href="tel:+91 9958924949">
                             <img src="img/phone-icon.png"> <span> +91 9958924949 </span>
                         </a>
                     </div>
@@ -76,12 +78,16 @@
                     </div>
                     <div class="header-log-in-wish-cart">
                         <div class="log-in text-center">
-                            <div class="login-img"><img src="img/log-in.png"></div>
-                            <div class="login-text custom-font-size">Login/Register</div>
+                            <a href="./login_register.html">
+                                <div class="login-img"><img src="img/log-in.png"></div>
+                                <div class="login-text custom-font-size">Login/Register</div>
+                            </a>
                         </div>
                         <div class="wishlist text-center">
-                            <div class="wishlist-img"><img src="img/wish-list.png" class="custom-margin-b"></div>
-                            <div class="wishlist-text custom-font-size">Wishlist</div>
+                            <a href="./wishlist.html">
+                                <div class="wishlist-img"><img src="img/wish-list.png" class="custom-margin-b"></div>
+                                <div class="wishlist-text custom-font-size">Wishlist</div>
+                            </a>
                         </div>
                         <div class="header-cart text-center">
                             <a href="./cart.html">
@@ -178,7 +184,8 @@
                         <h5 class="all-large-heading">Panasonic 1.5 Ton 5 Star Wi-Fi Twin Cool Inverter Split AC</h5>
                     </div>
                     <div class="prod-cart-price pb-4">
-                        <span class="cart-price-black">Price: </span><span class="cart-ruppe-sign">₹</span> <span class="head-color-price">25,999</span>
+                        <span class="cart-price-black">Price: </span><span class="cart-ruppe-sign">₹</span> <span
+                            class="head-color-price">25,999</span>
                     </div>
                     <div class="cart-stars">
                         <img src="img/five-star.png">
@@ -199,11 +206,11 @@
                         <div class="cart-del-wish">
                             <div class="delete-cart text-center">
                                 <img src="img/delete-bin.png">
-                               <p class="p-0 m-0 custom-font-size">Remove</p>
+                                <p class="p-0 m-0 custom-font-size">Remove</p>
                             </div>
                             <div class="delete-cart text-center">
                                 <img src="img/wish4.png">
-                               <p class="p-0 m-0 custom-font-size">Wishlist</p>
+                                <p class="p-0 m-0 custom-font-size">Wishlist</p>
                             </div>
                         </div>
                     </div>
@@ -218,7 +225,8 @@
                         <h5 class="all-large-heading">Panasonic 1.5 Ton 5 Star Wi-Fi Twin Cool Inverter Split AC</h5>
                     </div>
                     <div class="prod-cart-price pb-4">
-                        <span class="cart-price-black">Price: </span><span class="cart-ruppe-sign">₹</span> <span class="head-color-price">25,999</span>
+                        <span class="cart-price-black">Price: </span><span class="cart-ruppe-sign">₹</span> <span
+                            class="head-color-price">25,999</span>
                     </div>
                     <div class="cart-stars">
                         <img src="img/five-star.png">
@@ -233,17 +241,17 @@
                             <span>
                                 <img src="img/minus.png" class="minus-cart" id="minus2">
                                 <span id="fromJSNum2" class="jsNumCart"> 30 </span>
-                                <img src="img/plus.png" class="plus-cart" id="plus2" >
+                                <img src="img/plus.png" class="plus-cart" id="plus2">
                             </span>
                         </div>
                         <div class="cart-del-wish">
                             <div class="delete-cart text-center">
                                 <img src="img/delete-bin.png">
-                               <p class="p-0 m-0 custom-font-size">Remove</p>
+                                <p class="p-0 m-0 custom-font-size">Remove</p>
                             </div>
                             <div class="delete-cart text-center">
                                 <img src="img/wish4.png">
-                               <p class="p-0 m-0 custom-font-size">Wishlist</p>
+                                <p class="p-0 m-0 custom-font-size">Wishlist</p>
                             </div>
                         </div>
                     </div>
@@ -275,7 +283,7 @@
                         <div class="cart-per-service">
                             <div class="cart-service-out-box">
                                 <div class="cart-service-img">
-                                    <img src="img/a2.png" >
+                                    <img src="img/a2.png">
                                 </div>
                             </div>
                         </div>
@@ -292,7 +300,7 @@
                         <div class="cart-per-service">
                             <div class="cart-service-out-box">
                                 <div class="cart-service-img">
-                                    <img src="img/a1.png" >
+                                    <img src="img/a1.png">
                                 </div>
                             </div>
                         </div>
@@ -309,7 +317,7 @@
                         <div class="cart-per-service">
                             <div class="cart-service-out-box">
                                 <div class="cart-service-img">
-                                    <img src="img/a4.png" >
+                                    <img src="img/a4.png">
                                 </div>
                             </div>
                         </div>
@@ -325,7 +333,8 @@
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="secure-payments">
-                        <img src="img/safe.png"> <span class="cart-secure-text custom-font-size">Save and Sequre Payments , Easy returns. 100% Authentic Products</span>
+                        <img src="img/safe.png"> <span class="cart-secure-text custom-font-size">Save and Sequre
+                            Payments , Easy returns. 100% Authentic Products</span>
                     </div>
                     <div class="car-per-amount-box">
                         <div class="amountName">
@@ -360,7 +369,8 @@
                             <span class="cart-ruppe-sign">₹</span> 2,789.00
                         </div>
                     </div>
-                    <p class="p-0 m-0 cart-saving-para custom-font-size">You Saved <span class="green-text-color">₹3,199</span> by Applying Coupon Code</p>
+                    <p class="p-0 m-0 cart-saving-para custom-font-size">You Saved <span
+                            class="green-text-color">₹3,199</span> by Applying Coupon Code</p>
                     <div class="car-per-amount-box pt-3 pb-5">
                         <div class="amountName">
                             Shipping
@@ -381,7 +391,7 @@
                             <p class="p-0 m-0 custom-font-size">Inclusive of all Taxes & GST*</p>
                         </div>
                         <div class="amount">
-                                <h5 class="all-large-heading"><span class="cart-ruppe-sign">₹</span> 1,63,369.00</h5>
+                            <h5 class="all-large-heading"><span class="cart-ruppe-sign">₹</span> 1,63,369.00</h5>
                         </div>
                     </div>
                     <div class="checkout-bton">
@@ -389,7 +399,8 @@
                             <button class="btns checkout-button">Continue to Checkout</button>
                         </a>
                     </div>
-                    <div class="saving-msg text-center pt-3 extra-large-font-cust-size">You will save ₹ 14,356 on this Order</div>
+                    <div class="saving-msg text-center pt-3 extra-large-font-cust-size">You will save ₹ 14,356 on this
+                        Order</div>
                 </div>
             </div>
         </div>
@@ -601,7 +612,7 @@
             <div class="footer-content">
                 <div class="footer-box">
                     <div class="footer-header-img pb-2">
-                        <div class="fotter-img"><img src="img/footer-logo.png"></div>
+                        <div class="fotter-img"><img src="img/logo.png"></div>
                     </div>
                     <div class="footer-text normal-large-font-cust pb-2">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quis non porro nobis corrupti
@@ -652,7 +663,7 @@
                         <a href="#">My Account</a>
                     </div>
                     <div class="fotter-links pb-2">
-                        <a href="#">Wish List</a>
+                        <a href="./wishlist.html">Wish List</a>
                     </div>
                     <div class="fotter-links pb-2">
                         <a href="#">Orders History</a>
@@ -671,7 +682,7 @@
                             info@electricoworld.com</a>
                     </div>
                     <div class="fotter-links pb-2">
-                        <a href="tel:+91-9958924949"><span><i class="fas fa-phone-alt"></i></span> +91 99589 24949</a>
+                        <a href="tel:+91 99589 24949"><span><i class="fas fa-phone-alt"></i></span> +91 99589 24949</a>
                     </div>
                 </div>
             </div>
@@ -705,20 +716,20 @@
     <script>
         let plusCart = document.querySelectorAll('.plus-cart');
         let minusCart = document.querySelectorAll('.minus-cart');
-        plusCart.forEach((e,i)=>{
-            e.addEventListener('click', ()=>{
+        plusCart.forEach((e, i) => {
+            e.addEventListener('click', () => {
                 let spanNum2 = e.parentNode.querySelector('.jsNumCart')
                 let changeNum = parseFloat(spanNum2.innerText)
                 changeNum = changeNum + 1;
                 spanNum2.innerText = changeNum;
             })
         })
-        minusCart.forEach((m,j)=>{
-            m.addEventListener('click', ()=>{
-            let spanNum = m.parentNode.querySelector('.jsNumCart')
-            let changeNum = parseFloat(spanNum.innerText);
-            changeNum = changeNum - 1;
-            spanNum.innerText = changeNum; 
+        minusCart.forEach((m, j) => {
+            m.addEventListener('click', () => {
+                let spanNum = m.parentNode.querySelector('.jsNumCart')
+                let changeNum = parseFloat(spanNum.innerText);
+                changeNum = changeNum - 1;
+                spanNum.innerText = changeNum;
             })
         })
     </script>
