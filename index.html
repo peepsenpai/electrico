@@ -61,7 +61,8 @@
                 <div class="header-right-box" id="header-right-box-toggle">
                     <div class="header-search-btn">
                         <div class="search-input">
-                            <input type="text" id="header-search-input" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()" placeholder="Search">
+                            <input type="text" id="header-search-input" onmouseenter="mouseEnter()"
+                                onmouseleave="mouseLeave()" placeholder="Search">
                             <span class="search-img"><img src="img/search.png"></span>
                         </div>
                     </div>
@@ -72,25 +73,29 @@
                     </div>
                     <div class="download-app-header">
                         <span class="download-para custom-font-size">Download App</span>
-                        <img src="img/apple.png">
-                        <img src="img/android.png">
+                        <a href="https://apps.apple.com/in/app/electrico/id1512225988" target="_blank">
+                            <img src="img/apple.png">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.worldelectrico" target="_blank">
+                            <img src="img/android.png">
+                        </a>
                     </div>
                     <div class="header-log-in-wish-cart">
                         <div class="log-in text-center">
                             <a href="./login_register.html">
-                                <div class="login-img"><img src="img/log-in.png"></div>
+                                <div class="login-img img-log-wish-cart"><img src="img/log-in.png"></div>
                                 <div class="login-text custom-font-size">Login/Register</div>
                             </a>
                         </div>
                         <div class="wishlist text-center">
                             <a href="./wishlist.html">
-                                <div class="wishlist-img"><img src="img/wish-list.png" class="custom-margin-b"></div>
+                                <div class="wishlist-img img-log-wish-cart"><img src="img/wish-list.png" class="custom-margin-b"></div>
                                 <div class="wishlist-text custom-font-size">Wishlist</div>
                             </a>
                         </div>
                         <div class="header-cart text-center">
                             <a href="./cart.html">
-                                <div class="cart-img"><img src="img/cart.png" class="custom-margin-b"></div>
+                                <div class="cart-img img-log-wish-cart"><img src="img/cart.png" class="custom-margin-b"></div>
                                 <div class="cart-text custom-font-size">Cart</div>
                             </a>
                         </div>
@@ -150,7 +155,7 @@
 
     <!-- backgrounf-img  -->
     <div class="background-img-container">
-        <img src="img/mantle.png" class="img-fluid">
+        <img src="img/mantle.png" class="img-fluid" id="sliderBgHome">
     </div>
 
     <!-- feat  -->
@@ -217,28 +222,26 @@
                         <div class="head-p-sub-all">
                             <div class="air-cond-headinmg">
                                 <h3 class="all-large-heading">Air Conditioners</h3>
-                                <p class="medium-size-faded-bold">Lorem, ipsum dolor.</p>
+                                <p class="medium-size-faded-bold">Hi speed cooling AC</p>
                             </div>
                         </div>
                         <div class="air-cond-long-para">
-                            <p class="air-cond-upper-long normal-large-font-cust">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Dolore illo impedit ducimus dolor quasi! Eut illum perferendis
-                                laudantium quaerat asperiores consequatur, dicta consequuntur et. Illum consectetur sunt
-                                dolorem tempora id.</p>
-                            <p class="normal-large-font-cust">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Consequatur voluptate quae sis tenetur. Tenetur, harum suscipit. Beatae, obcaecaque
-                                totam odio deleniti aperiam omnis aspernatur consequuntur nihil qui provident sit, est
-                                enim ratione natus ducimus tenetur. Animi sit, cupiditate expedita aperiam eligendi
-                                dolores vitae.</p>
-                            <p class="normal-large-font-cust">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Optio, praesentium corrupti blanditiis nemo culpa, odio dolorem ullam modi deserunt
-                                minus necessitatibus temporibus fugit enim?i voluptas ut cupiditate! Iure minima sequi,
-                                accusamus modi magnam ipsam cumque facilis vel voluptates rerum? Sed unde rerum tempore
-                                obcaecati est ullam, consectetur necessitatibus repellendus minus.</p>
-                            <p class="air-cond-lower-long normal-large-font-cust">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Autem, iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quos saepe architecto obcaecati dolorum nisi autem. Molestias pariatur eum quisquam
-                                expedita.</p>
+                            <p class="air-cond-upper-long normal-large-font-cust">Electrico World is a one-stop solution for all HVAC and air conditioning needs.
+                                To overcome the extremes of nature, Air Conditioning has become a necessity
+                                rather than a choice. Electrico brings together all the leading brands at one
+                                platform with the inclusion of all available services related to air conditioning
+                                installation and service at your fingertips.</p>
+                            <p class="normal-large-font-cust">Try our free Air Conditioning calculator to find a solution that's right for you.
+                                Simply enter your preferences and room parameters to choose your air
+                                conditioner in a matter of seconds. All of this, from the comfort of your own
+                                home</p>
+                            <p class="normal-large-font-cust">You can get all of your favourite products delivered right to your door with
+                                express delivery. Concerned about maintenance and breakdowns? We've got it
+                                as well! You'll never have to break a sweat, with our 24x7 service and repair
+                                support. Electrico provides ease of EMI options also. Conveniently book any of
+                                our services on our website or mobile application. Talk to our HVAC experts for
+                                any queries or HVAC support. We provide free HVAC consultation for your next
+                                Residential, Commercial and Industrial Air Conditioning needs.</p>
                         </div>
                         <div class="air-cond-readmore">
                             <button class="btns air-cond-read-more-btn normal-large-font-cust">Read More</button>
@@ -412,16 +415,38 @@
                                     <option value="Ductless-Mini-Split">Ductless Mini-Split</option>
                                 </select>
                             </div>
-                            <div class="ac-calct-range">
+
+
+                            <!-- <div class="ac-calct-range">
                                 <div class="ac-range-price medium-font-size-cust">PRICE</div>
                                 <div class="ac-calc-range-input">
+                                    <input type="range" class="form-range input-range" id="customRange1" min="10000"
+                                        max="40000">
                                     <input type="range" class="form-range input-range" id="customRange1" min="10000"
                                         max="40000">
                                 </div>
                                 <div class="ac-calc-input-disabled">
                                     <p class="m-0">&#x20B9; <span id="ac-js-value">24898</span></p>
                                 </div>
+                            </div> -->
+
+                            <div class="ac-price-twoInput">
+                                <div class="price-homeInput">PRICE</div>
+                                <div class="acCalcInputRange">
+                                    <div>
+                                        <input type="range" class="form-range input-range" id="customRange1" min="10000"
+                                        max="40000">
+                                    </div>
+                                    <div>
+                                        <input type="range" class="form-range input-range" id="customRange2" min="40000"
+                                        max="90000">
+                                    </div>
+                                </div>
+                                <div class="input-disabledHome">
+                                    <span>&#x20B9; <span id="ac-js-value">24898</span> - &#x20B9; <span id="ac-js-value2">44500</span></span>
+                                </div>
                             </div>
+
                             <div class="ac-find-button">
                                 <button class="btns ac-button-calct">Find AC</button>
                             </div>
@@ -519,16 +544,18 @@
                         </div>
                     </div>
                     <div class="air-cond-long-para">
-                        <p class="air-cond-upper-long normal-large-font-cust">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Dolore illo impedit ducimus dolor quasi! Eut illum perferendis
-                            laudantium quaerat asperiores consequatur, dicta consequuntur et. Illum consectetur sunt
-                            dolorem tempora id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-                            explicabo dignissimos quos dolore voluptates minima officia! Cumque nemo eveniet ratione?
+                        <p class="air-cond-upper-long normal-large-font-cust">In most parts of the world, air conditioners and indoor climate control have
+                            become a necessity. As the world's temperature rises, so does the demand for
+                            environment-friendly air conditioners. The issue is that most air conditioners
+                            are high-power devices that consume a lot of electricity to operate. They also
+                            use potent, man-made greenhouse gases as coolants.
                         </p>
-                        <p class="air-cond-lower-long normal-large-font-cust">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Autem, iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quos saepe architecto obcaecati dolorum nisi autem. Molestias pariatur eum quisquam
-                            expedita.</p>
+                        <p class="normal-large-font-cust">The hotter the weather, the more we need air conditioners, and the more they
+                            contribute to climate change by emitting carbon dioxide and greenhouse
+                            gases. It's a never-ending problem!</p>
+                        <p class="normal-large-font-cust mb-3">Thankfully, Electrico provides energy-saving and environment-friendly air
+                            conditioners. We have a plethora of fantastic options for energy-efficient and
+                            environment-friendly Air Conditioners to choose from!</p>
                     </div>
                     <div class="air-cond-readmore">
                         <button class="btns air-cond-read-more-btn normal-large-font-cust">Read More</button>
@@ -904,6 +931,10 @@
         </div>
     </section>
 
+    <div id="scrollBtn" onclick="toTop()">
+        <span><i class="fas fa-chevron-up"></i></span>
+    </div>
+
     <!-- footer  -->
     <section class="footer">
         <div class="container padding-top">
@@ -918,8 +949,12 @@
                         sint atque, molestiae reici.
                     </div>
                     <div class="footer-app-ios-img">
-                        <div class="ios-img"><img src="img/app-store.png" class="img-fluid"></div>
-                        <div class="app-img"><img src="img/google-play-store.png" class="img-fluid"></div>
+                        <div class="ios-img">
+                            <a href="https://apps.apple.com/in/app/electrico/id1512225988" target="_blank">
+                                <img src="img/app-store.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="app-img"><a href="https://play.google.com/store/apps/details?id=com.worldelectrico" target="_blank"><img src="img/google-play-store.png" class="img-fluid"></a></div>
                     </div>
                 </div>
                 <div class="footer-box posit-realt-foot-box">
@@ -934,16 +969,13 @@
                         <a href="./product_listing.html">Products</a>
                     </div>
                     <div class="fotter-links pb-1">
-                        <a href="#">Services</a>
-                    </div>
-                    <div class="fotter-links pb-1">
                         <a href="./contact_us.html">Contact</a>
                     </div>
                 </div>
                 <div class="footer-box posit-realt-foot-box">
                     <div class="footer-header padding-bottom large-font-cust-size">Services</div>
                     <div class="fotter-links pb-2">
-                        <a href="./terms_conditions.html">Terms & Conditions</a>
+                        <a href="./terms_and_conditions.html">Terms & Conditions</a>
                     </div>
                     <div class="fotter-links pb-2">
                         <a href="./privacy_policy.html">Privacy Policy</a>
@@ -952,19 +984,22 @@
                         <a href="./delivery_information.html">Delivery Information</a>
                     </div>
                     <div class="fotter-links pb-2">
-                        <a href="./payment_returns.html">Payment and Returns</a>
+                        <a href="./return_and_refund_policy.html">Return & Refund Policy</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="./cookie_policy.html">Cookie Policy</a>
                     </div>
                 </div>
                 <div class="footer-box posit-realt-foot-box">
                     <div class="footer-header padding-bottom large-font-cust-size">My Account</div>
                     <div class="fotter-links pb-2">
-                        <a href="#">My Account</a>
+                        <a href="./my_account.html">My Account</a>
                     </div>
                     <div class="fotter-links pb-2">
                         <a href="./wishlist.html">Wish List</a>
                     </div>
                     <div class="fotter-links pb-2">
-                        <a href="#">Orders History</a>
+                        <a href="./order_history.html">Orders History</a>
                     </div>
                     <div class="fotter-links pb-2">
                         <a href="./delivery_tracking.html">Order Tracking</a>
@@ -1043,7 +1078,9 @@
     </script>
 
     <script>
-        let nqvItem = document.querySelectorAll('.sLiDErIteM')
+        let nqvItem = document.querySelectorAll('.sLiDErIteM'),
+        sliderBgHome = document.getElementById('sliderBgHome');
+        sliderSRCArr = ['img/mantle.png','img/slidebg1.png', 'img/slidebg2.png', 'img/slidebg3.png', 'img/slidebg1.png', 'img/slidebg2.png']
         // console.log(nqvItem[0]);
         let count = 0;
         (function () {
@@ -1052,11 +1089,12 @@
                     e.classList.remove('active');
                 })
                 nqvItem[count].classList.add('active');
+                sliderBgHome.src = `${sliderSRCArr[count]}`
                 count++
                 if (count > 5) {
                     count = 0;
                 }
-            }, 2000)
+            }, 3500)
         }())
 
 
@@ -1066,13 +1104,24 @@
             // console.log(position);
             sliderContainer.classList.toggle('CustZIndex', position)
         })
+
+
+
         // ac 
-        let range = document.getElementById('customRange1');
-        let spanValue = document.getElementById('ac-js-value')
+        let range = document.getElementById('customRange1'),
+        range2 = document.getElementById('customRange2')
+        let spanValue = document.getElementById('ac-js-value'),
+            spanValue2 = document.getElementById('ac-js-value2');
+
         range.addEventListener('change', () => {
             let val = range.value;
             spanValue.innerText = val;
         })
+        range2.addEventListener('change', ()=>{
+            let val2 = range2.value;
+            spanValue2.innerText = val2;
+        })
+
     </script>
     <script src="logic.js"></script>
 </body>

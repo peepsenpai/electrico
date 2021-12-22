@@ -62,36 +62,41 @@
                 <div class="header-right-box" id="header-right-box-toggle">
                     <div class="header-search-btn">
                         <div class="search-input">
-                            <input type="text" id="header-search-input" placeholder="Search" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()">
+                            <input type="text" id="header-search-input" onmouseenter="mouseEnter()"
+                                onmouseleave="mouseLeave()" placeholder="Search">
                             <span class="search-img"><img src="img/search.png"></span>
                         </div>
                     </div>
                     <div class="header-phone-number">
-                        <a href="tel:+91 99589 24949">
+                        <a href="tel:+91 9958924949">
                             <img src="img/phone-icon.png"> <span> +91 9958924949 </span>
                         </a>
                     </div>
                     <div class="download-app-header">
                         <span class="download-para custom-font-size">Download App</span>
-                        <img src="img/apple.png">
-                        <img src="img/android.png">
+                        <a href="https://apps.apple.com/in/app/electrico/id1512225988" target="_blank">
+                            <img src="img/apple.png">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.worldelectrico" target="_blank">
+                            <img src="img/android.png">
+                        </a>
                     </div>
                     <div class="header-log-in-wish-cart">
                         <div class="log-in text-center">
                             <a href="./login_register.html">
-                                <div class="login-img"><img src="img/log-in.png"></div>
+                                <div class="login-img img-log-wish-cart"><img src="img/log-in.png"></div>
                                 <div class="login-text custom-font-size">Login/Register</div>
                             </a>
                         </div>
                         <div class="wishlist text-center">
                             <a href="./wishlist.html">
-                                <div class="wishlist-img"><img src="img/wish-list.png" class="custom-margin-b"></div>
+                                <div class="wishlist-img img-log-wish-cart"><img src="img/wish-list.png" class="custom-margin-b"></div>
                                 <div class="wishlist-text custom-font-size">Wishlist</div>
                             </a>
                         </div>
                         <div class="header-cart text-center">
                             <a href="./cart.html">
-                                <div class="cart-img"><img src="img/cart.png" class="custom-margin-b"></div>
+                                <div class="cart-img img-log-wish-cart"><img src="img/cart.png" class="custom-margin-b"></div>
                                 <div class="cart-text custom-font-size">Cart</div>
                             </a>
                         </div>
@@ -478,8 +483,12 @@
                         sint atque, molestiae reici.
                     </div>
                     <div class="footer-app-ios-img">
-                        <div class="ios-img"><img src="img/app-store.png" class="img-fluid"></div>
-                        <div class="app-img"><img src="img/google-play-store.png" class="img-fluid"></div>
+                        <div class="ios-img">
+                            <a href="https://apps.apple.com/in/app/electrico/id1512225988" target="_blank">
+                                <img src="img/app-store.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="app-img"><a href="https://play.google.com/store/apps/details?id=com.worldelectrico" target="_blank"><img src="img/google-play-store.png" class="img-fluid"></a></div>
                     </div>
                 </div>
                 <div class="footer-box posit-realt-foot-box">
@@ -494,16 +503,13 @@
                         <a href="./product_listing.html">Products</a>
                     </div>
                     <div class="fotter-links pb-1">
-                        <a href="#">Services</a>
-                    </div>
-                    <div class="fotter-links pb-1">
                         <a href="./contact_us.html">Contact</a>
                     </div>
                 </div>
                 <div class="footer-box posit-realt-foot-box">
                     <div class="footer-header padding-bottom large-font-cust-size">Services</div>
                     <div class="fotter-links pb-2">
-                        <a href="./terms_conditions.html">Terms & Conditions</a>
+                        <a href="./terms_and_conditions.html">Terms & Conditions</a>
                     </div>
                     <div class="fotter-links pb-2">
                         <a href="./privacy_policy.html">Privacy Policy</a>
@@ -512,19 +518,22 @@
                         <a href="./delivery_information.html">Delivery Information</a>
                     </div>
                     <div class="fotter-links pb-2">
-                        <a href="./payment_returns.html">Payments And Returns</a>
+                        <a href="./return_and_refund_policy.html">Return & Refund Policy</a>
+                    </div>
+                    <div class="fotter-links pb-2">
+                        <a href="./cookie_policy.html">Cookie Policy</a>
                     </div>
                 </div>
                 <div class="footer-box posit-realt-foot-box">
                     <div class="footer-header padding-bottom large-font-cust-size">My Account</div>
                     <div class="fotter-links pb-2">
-                        <a href="#">My Account</a>
+                        <a href="./my_account.html">My Account</a>
                     </div>
                     <div class="fotter-links pb-2">
                         <a href="./wishlist.html">Wish List</a>
                     </div>
                     <div class="fotter-links pb-2">
-                        <a href="#">Orders History</a>
+                        <a href="./order_history.html">Orders History</a>
                     </div>
                     <div class="fotter-links pb-2">
                         <a href="./delivery_tracking.html">Order Tracking</a>
@@ -562,6 +571,9 @@
         </div>
     </section>
 
+    <div id="scrollBtn" onclick="toTop()">
+        <span><i class="fas fa-chevron-up"></i></span>
+    </div>
     <script src="logic.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
