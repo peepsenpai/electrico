@@ -89,13 +89,15 @@
                         </div>
                         <div class="wishlist text-center">
                             <a href="./wishlist.html">
-                                <div class="wishlist-img img-log-wish-cart"><img src="img/wish-list.png" class="custom-margin-b"></div>
+                                <div class="wishlist-img img-log-wish-cart"><img src="img/wish-list.png"
+                                        class="custom-margin-b"></div>
                                 <div class="wishlist-text custom-font-size">Wishlist</div>
                             </a>
                         </div>
                         <div class="header-cart text-center">
                             <a href="./cart.html">
-                                <div class="cart-img img-log-wish-cart"><img src="img/cart.png" class="custom-margin-b"></div>
+                                <div class="cart-img img-log-wish-cart"><img src="img/cart.png" class="custom-margin-b">
+                                </div>
                                 <div class="cart-text custom-font-size">Cart</div>
                             </a>
                         </div>
@@ -155,7 +157,36 @@
 
     <!-- backgrounf-img  -->
     <div class="background-img-container">
-        <img src="img/mantle.png" class="img-fluid" id="sliderBgHome">
+        <div class="sliderData active">
+            <a href="./cart.html" id="slider_Link">
+                <img src="img/mantle.png" class="img-fluid" id="sliderBgHome">
+            </a>
+        </div>
+        <div class="sliderData">
+            <a href="./wishlist.html" id="slider_Link">
+                <img src="img/slidebg1.png" class="img-fluid" id="sliderBgHome">
+            </a>
+        </div>
+        <div class="sliderData">
+            <a href="./checkout.html" id="slider_Link">
+                <img src="img/slidebg2.png" class="img-fluid" id="sliderBgHome">
+            </a>
+        </div>
+        <div class="sliderData">
+            <a href="./product_details.html" id="slider_Link">
+                <img src="img/slidebg3.png" class="img-fluid" id="sliderBgHome">
+            </a>
+        </div>
+        <div class="sliderData">
+            <a href="./privacy_policy.html" id="slider_Link">
+                <img src="img/slidebg1.png" class="img-fluid" id="sliderBgHome">
+            </a>
+        </div>
+        <div class="sliderData">
+            <a href="./order_history.html" id="slider_Link">
+                <img src="img/slidebg2.png" class="img-fluid" id="sliderBgHome">
+            </a>
+        </div>
     </div>
 
     <!-- feat  -->
@@ -222,20 +253,23 @@
                         <div class="head-p-sub-all">
                             <div class="air-cond-headinmg">
                                 <h3 class="all-large-heading">Air Conditioners</h3>
-                                <p class="medium-size-faded-bold">Hi speed cooling AC</p>
+                                <!-- <p class="medium-size-faded-bold">Hi speed cooling AC</p> -->
                             </div>
                         </div>
                         <div class="air-cond-long-para">
-                            <p class="air-cond-upper-long normal-large-font-cust">Electrico World is a one-stop solution for all HVAC and air conditioning needs.
+                            <p class="air-cond-upper-long normal-large-font-cust">Electrico World is a one-stop solution
+                                for all HVAC and air conditioning needs.
                                 To overcome the extremes of nature, Air Conditioning has become a necessity
                                 rather than a choice. Electrico brings together all the leading brands at one
                                 platform with the inclusion of all available services related to air conditioning
                                 installation and service at your fingertips.</p>
-                            <p class="normal-large-font-cust">Try our free Air Conditioning calculator to find a solution that's right for you.
+                            <p class="normal-large-font-cust">Try our free Air Conditioning calculator to find a
+                                solution that's right for you.
                                 Simply enter your preferences and room parameters to choose your air
                                 conditioner in a matter of seconds. All of this, from the comfort of your own
-                                home</p>
-                            <p class="normal-large-font-cust">You can get all of your favourite products delivered right to your door with
+                                home.</p>
+                            <p class="normal-large-font-cust">You can get all of your favourite products delivered right
+                                to your door with
                                 express delivery. Concerned about maintenance and breakdowns? We've got it
                                 as well! You'll never have to break a sweat, with our 24x7 service and repair
                                 support. Electrico provides ease of EMI options also. Conveniently book any of
@@ -244,7 +278,9 @@
                                 Residential, Commercial and Industrial Air Conditioning needs.</p>
                         </div>
                         <div class="air-cond-readmore">
-                            <button class="btns air-cond-read-more-btn normal-large-font-cust">Read More</button>
+                            <a href="./about_us.html">
+                                <button class="btns air-cond-read-more-btn normal-large-font-cust">Read More</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -430,20 +466,25 @@
                                 </div>
                             </div> -->
 
-                            <div class="ac-price-twoInput">
+                            <div class="ac-price-twoInput mb-2">
                                 <div class="price-homeInput">PRICE</div>
                                 <div class="acCalcInputRange">
-                                    <div>
+                                    <!-- <div>
                                         <input type="range" class="form-range input-range" id="customRange1" min="10000"
-                                        max="40000">
+                                            max="90000">
                                     </div>
                                     <div>
-                                        <input type="range" class="form-range input-range" id="customRange2" min="40000"
-                                        max="90000">
-                                    </div>
+                                        <input type="range" class="form-range input-range" id="customRange2" min="10000"
+                                            max="90000">
+                                    </div> -->
+                                    <input type="range" class="form-range input-range" value="30000" id="customRange1" min="10000"
+                                    max="90000" onchange="HomeInputChange()">
+                                    <input type="range" class="form-range input-range" value="70000" id="customRange2" min="10000"
+                                    max="90000" onchange="HomeInputChange()">
                                 </div>
                                 <div class="input-disabledHome">
-                                    <span>&#x20B9; <span id="ac-js-value">24898</span> - &#x20B9; <span id="ac-js-value2">44500</span></span>
+                                    <span>&#x20B9; <span id="ac-js-value">30000</span> - &#x20B9; <span
+                                            id="ac-js-value2">70000</span></span>
                                 </div>
                             </div>
 
@@ -540,26 +581,29 @@
                     <div class="head-p-sub-all">
                         <div class="air-cond-headinmg">
                             <h3 class="all-large-heading">Eco Friendly Technology</h3>
-                            <p class="medium-size-faded-bold">Lorem, ipsum dolor.</p>
+                            <!-- <p class="medium-size-faded-bold">Lorem, ipsum dolor.</p> -->
                         </div>
                     </div>
                     <div class="air-cond-long-para">
-                        <p class="air-cond-upper-long normal-large-font-cust">In most parts of the world, air conditioners and indoor climate control have
+                        <p class="air-cond-upper-long normal-large-font-cust">In most parts of the world, air
+                            conditioners and indoor climate control have
                             become a necessity. As the world's temperature rises, so does the demand for
                             environment-friendly air conditioners. The issue is that most air conditioners
                             are high-power devices that consume a lot of electricity to operate. They also
                             use potent, man-made greenhouse gases as coolants.
                         </p>
-                        <p class="normal-large-font-cust">The hotter the weather, the more we need air conditioners, and the more they
+                        <p class="normal-large-font-cust">The hotter the weather, the more we need air conditioners, and
+                            the more they
                             contribute to climate change by emitting carbon dioxide and greenhouse
                             gases. It's a never-ending problem!</p>
-                        <p class="normal-large-font-cust mb-3">Thankfully, Electrico provides energy-saving and environment-friendly air
+                        <p class="normal-large-font-cust mb-3">Thankfully, Electrico provides energy-saving and
+                            environment-friendly air
                             conditioners. We have a plethora of fantastic options for energy-efficient and
                             environment-friendly Air Conditioners to choose from!</p>
                     </div>
-                    <div class="air-cond-readmore">
+                    <!-- <div class="air-cond-readmore">
                         <button class="btns air-cond-read-more-btn normal-large-font-cust">Read More</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -591,6 +635,9 @@
                                         </div>
                                         <div class="product-offer-img">
                                             <img src="img/discount.png">
+                                            <!-- added html  -->
+                                            <span class="product_offer_discount">35% off</span>
+                                            <!-- added html end  -->
                                         </div>
                                     </div>
                                 </div>
@@ -616,6 +663,7 @@
                                         </div>
                                         <div class="product-offer-img">
                                             <img src="img/discount.png">
+                                            <span class="product_offer_discount">35% off</span>
                                         </div>
                                     </div>
                                 </div>
@@ -641,6 +689,7 @@
                                         </div>
                                         <div class="product-offer-img">
                                             <img src="img/discount.png">
+                                            <span class="product_offer_discount">35% off</span>
                                         </div>
                                     </div>
                                 </div>
@@ -666,6 +715,7 @@
                                         </div>
                                         <div class="product-offer-img">
                                             <img src="img/discount.png">
+                                            <span class="product_offer_discount">35% off</span>
                                         </div>
                                     </div>
                                 </div>
@@ -691,81 +741,7 @@
                                         </div>
                                         <div class="product-offer-img">
                                             <img src="img/discount.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./product_details.html">
-                            <div class="flex-product-box">
-                                <div class="product-per-box">
-                                    <div class="product-img">
-                                        <img src="img/daikin.png" class="img-fluid">
-                                    </div>
-                                    <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
-                                    <div class="product-price">
-                                        <span class="prod-price-text">Price: </span> <span
-                                            class="prod-actual-price">&#x20B9; 25,999</span> <span
-                                            class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
-                                    </div>
-                                    <div class="star-offer-product">
-                                        <div class="prod-star-img">
-                                            <img src="img/five-star.png">
-                                        </div>
-                                        <div class="product-offer-img">
-                                            <img src="img/discount.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./product_details.html">
-                            <div class="flex-product-box">
-                                <div class="product-per-box">
-                                    <div class="product-img">
-                                        <img src="img/daikin.png" class="img-fluid">
-                                    </div>
-                                    <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
-                                    <div class="product-price">
-                                        <span class="prod-price-text">Price: </span> <span
-                                            class="prod-actual-price">&#x20B9; 25,999</span> <span
-                                            class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
-                                    </div>
-                                    <div class="star-offer-product">
-                                        <div class="prod-star-img">
-                                            <img src="img/five-star.png">
-                                        </div>
-                                        <div class="product-offer-img">
-                                            <img src="img/discount.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="./product_details.html">
-                            <div class="flex-product-box">
-                                <div class="product-per-box">
-                                    <div class="product-img">
-                                        <img src="img/daikin.png" class="img-fluid">
-                                    </div>
-                                    <div class="product-name">Dalkin 0.8 ton 5 Star Split AC</div>
-                                    <div class="product-price">
-                                        <span class="prod-price-text">Price: </span> <span
-                                            class="prod-actual-price">&#x20B9; 25,999</span> <span
-                                            class="main-prod-price"><del><span>&#x20B9;26,000</span></del></span>
-                                    </div>
-                                    <div class="star-offer-product">
-                                        <div class="prod-star-img">
-                                            <img src="img/five-star.png">
-                                        </div>
-                                        <div class="product-offer-img">
-                                            <img src="img/discount.png">
+                                            <span class="product_offer_discount">35% off</span>
                                         </div>
                                     </div>
                                 </div>
@@ -944,9 +920,10 @@
                         <div class="fotter-img"><img src="img/logo.png"></div>
                     </div>
                     <div class="footer-text normal-large-font-cust pb-2">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quis non porro nobis corrupti
-                        ipsum similique nisi, eligendi optio recusandae tempore exercitationem. Quam corrupti dolore
-                        sint atque, molestiae reici.
+                        Electrico World is a one-stop solution for all Heating Ventilation Air Conditioning &
+                        Refrigeration needs. Electrico World brings together all the leading brands at one platform with
+                        the inclusion of all available services related to Air Conditioner. Enjoy the Convenience of
+                        Marketplace shopping from Home.
                     </div>
                     <div class="footer-app-ios-img">
                         <div class="ios-img">
@@ -954,7 +931,8 @@
                                 <img src="img/app-store.png" class="img-fluid">
                             </a>
                         </div>
-                        <div class="app-img"><a href="https://play.google.com/store/apps/details?id=com.worldelectrico" target="_blank"><img src="img/google-play-store.png" class="img-fluid"></a></div>
+                        <div class="app-img"><a href="https://play.google.com/store/apps/details?id=com.worldelectrico"
+                                target="_blank"><img src="img/google-play-store.png" class="img-fluid"></a></div>
                     </div>
                 </div>
                 <div class="footer-box posit-realt-foot-box">
@@ -1079,17 +1057,37 @@
 
     <script>
         let nqvItem = document.querySelectorAll('.sLiDErIteM'),
-        sliderBgHome = document.getElementById('sliderBgHome');
-        sliderSRCArr = ['img/mantle.png','img/slidebg1.png', 'img/slidebg2.png', 'img/slidebg3.png', 'img/slidebg1.png', 'img/slidebg2.png']
-        // console.log(nqvItem[0]);
+            sliderBgHome = document.getElementById('sliderBgHome'),
+            sliderData = document.querySelectorAll('.sliderData');
+
+        // // newjs
+        // let slider_Link = document.getElementById('slider_Link');
+        // sliderLinkArr = ['cart.html', 'wishlist.html', 'contact_us.html', 'checkout.html', 'delivery_tracking.html', 'cookie_policy.html'];
+        // // newjsend
+
+        // sliderSRCArr = ['img/mantle.png', 'img/slidebg1.png', 'img/slidebg2.png', 'img/slidebg3.png', 'img/slidebg1.png', 'img/slidebg2.png']
+        // // console.log(nqvItem[0]);
         let count = 0;
         (function () {
             setInterval(() => {
                 nqvItem.forEach((e) => {
                     e.classList.remove('active');
-                })
+                });
+                sliderData.forEach((elem)=>{
+                    elem.classList.remove('active');
+                });
                 nqvItem[count].classList.add('active');
-                sliderBgHome.src = `${sliderSRCArr[count]}`
+                sliderData[count].classList.add('active');
+
+
+                // sliderBgHome.src = `${sliderSRCArr[count]}`;
+                // let curentUrl = slider_Link.href;
+                // //   console.log(curentUrl);
+                // let newUrl = slider_Link.href.replace(`${curentUrl}`, `http://127.0.0.1:5501/${sliderLinkArr[count]}`);
+                // slider_Link.href = newUrl;
+
+                // // console.log(slider_Link.href);
+
                 count++
                 if (count > 5) {
                     count = 0;
@@ -1109,18 +1107,32 @@
 
         // ac 
         let range = document.getElementById('customRange1'),
-        range2 = document.getElementById('customRange2')
+            range2 = document.getElementById('customRange2')
         let spanValue = document.getElementById('ac-js-value'),
             spanValue2 = document.getElementById('ac-js-value2');
 
-        range.addEventListener('change', () => {
-            let val = range.value;
-            spanValue.innerText = val;
-        })
-        range2.addEventListener('change', ()=>{
-            let val2 = range2.value;
-            spanValue2.innerText = val2;
-        })
+        // js remove 
+        // range.addEventListener('change', () => {
+        //     let val = range.value;
+        //     spanValue.innerText = val;
+        // })
+        // range2.addEventListener('change', () => {
+        //     let val2 = range2.value;
+        //     spanValue2.innerText = val2;
+        // })
+        // new js added 
+        function HomeInputChange(){
+            let first_input_val = parseFloat(range.value),
+            second_input_val = parseFloat(range2.value);
+            if(first_input_val > second_input_val){
+                let tem_val = second_input_val;
+                second_input_val = first_input_val;
+                first_input_val = tem_val;
+            }
+            spanValue.innerText = first_input_val;
+            spanValue2.innerText = second_input_val;
+        }
+
 
     </script>
     <script src="logic.js"></script>

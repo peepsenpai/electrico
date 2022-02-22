@@ -156,7 +156,7 @@
                     <p>Your data will remain safe in our secure service</p>
                 </div>
                 <div class="per-bill-ship-address-book billing-address-content" style="cursor: pointer;">
-                    <div class="row">
+                    <div class="row perbillAddressmAc">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="biiliing-check-locat-img">
                                 <img src="img/locatino.png" class="img-fluid">
@@ -225,12 +225,12 @@
                             <textarea name="textarea" placeholder="ADDRESS"></textarea>
                         </div>
                         <div class="text-center mt-3">
-                            <button class="btns">Save Edit</button>
+                            <button class="btns">Save</button>
                         </div>
                     </div>
                 </div>
                 <div class="per-bill-ship-address-book mb-5 billing-address-content" style="cursor: pointer;">
-                    <div class="row">
+                    <div class="row perbillAddressmAc">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="biiliing-check-locat-img">
                                 <img src="img/locatino.png" class="img-fluid">
@@ -299,7 +299,7 @@
                             <textarea name="textarea" placeholder="ADDRESS"></textarea>
                         </div>
                         <div class="text-center mt-3">
-                            <button class="btns">Save Edit</button>
+                            <button class="btns">Save</button>
                         </div>
                     </div>
                 </div>
@@ -312,7 +312,7 @@
                 </div>
 
                 <div class="per-bill-ship-address-book shipping-address-content active" style="cursor: pointer;">
-                    <div class="row">
+                    <div class="row perbillAddressmAc">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="biiliing-check-locat-img">
                                 <img src="img/locatino.png" class="img-fluid">
@@ -342,6 +342,9 @@
                             <input type="text" placeholder="PHONE NUMBER">
                         </div>
                         <div class="billing-from-left-box">
+                            <input type="text" placeholder="ADDITIONAL NUMBER">
+                        </div>
+                        <div class="billing-from-left-box">
                             <input type="text" placeholder="E MAIL">
                         </div>
                         <div class="billing-from-left-box">
@@ -380,14 +383,17 @@
                         <div class="billing-from-left-box">
                             <textarea name="textarea" placeholder="ADDRESS"></textarea>
                         </div>
+                        <div class="billing-from-left-box">
+                            <textarea name="textarea" placeholder="ADD DELIVERY INSTRUCTIONS (OPTIONAL)"></textarea>
+                        </div>
                         <div class="text-center mt-3">
-                            <button class="btns">Save Edit</button>
+                            <button class="btns">Save</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="per-bill-ship-address-book shipping-address-content active" style="cursor: pointer;">
-                    <div class="row">
+                    <div class="row perbillAddressmAc">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="biiliing-check-locat-img">
                                 <img src="img/locatino.png" class="img-fluid">
@@ -417,6 +423,9 @@
                             <input type="text" placeholder="PHONE NUMBER">
                         </div>
                         <div class="billing-from-left-box">
+                            <input type="text" placeholder="ADDITIONAL NUMBER">
+                        </div>
+                        <div class="billing-from-left-box">
                             <input type="text" placeholder="E MAIL">
                         </div>
                         <div class="billing-from-left-box">
@@ -455,8 +464,11 @@
                         <div class="billing-from-left-box">
                             <textarea name="textarea" placeholder="ADDRESS"></textarea>
                         </div>
+                        <div class="billing-from-left-box">
+                            <textarea name="textarea" placeholder="ADD DELIVERY INSTRUCTIONS (OPTIONAL)"></textarea>
+                        </div>
                         <div class="text-center mt-3">
-                            <button class="btns">Save Edit</button>
+                            <button class="btns">Save</button>
                         </div>
                     </div>
                 </div>
@@ -503,9 +515,7 @@
                         <div class="fotter-img"><img src="img/logo.png"></div>
                     </div>
                     <div class="footer-text normal-large-font-cust pb-2">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quis non porro nobis corrupti
-                        ipsum similique nisi, eligendi optio recusandae tempore exercitationem. Quam corrupti dolore
-                        sint atque, molestiae reici.
+                        Electrico World is a one-stop solution for all Heating Ventilation Air Conditioning & Refrigeration needs. Electrico World brings together all the leading brands at one platform with the inclusion of all available services related to Air Conditioner. Enjoy the Convenience of Marketplace shopping from Home.
                     </div>
                     <div class="footer-app-ios-img">
                         <div class="ios-img">
@@ -600,9 +610,10 @@
     <script src="logic.js"></script>
 
     <script>
-        let addrrcl = document.querySelectorAll('.per-bill-ship-address-book');
+        let addrrcl = document.querySelectorAll('.perbillAddressmAc');
         addrrcl.forEach((e,i)=>{
-            let displayBox = e.querySelector('.accountfromBox');
+            let displayBox = e.offsetParent.querySelector('.accountfromBox');
+            
             e.addEventListener('click', ()=>{
                 displayBox.classList.toggle('active')
             })

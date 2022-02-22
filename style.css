@@ -481,14 +481,66 @@ bottom: -1.5rem;
     width: 100%;
 }
 
-
-.acCalcInputRange{
+/* remove css  */
+/* .acCalcInputRange{
     display: flex;
+} */
+/* added css  */
+.acCalcInputRange{
+    position: relative;
+}
+
+.acCalcInputRange input[type="range"] {
+   pointer-events: none;
+   position: absolute;
+   bottom: 0.6rem;
+   border: none;
+   outline: none;
+   height: 6px;
+   margin: 0;
+   padding: 0;
+ }  
+ 
+.acCalcInputRange input[type="range"]::-webkit-slider-thumb {
+   pointer-events: all;
+   position: relative;
+   z-index: 1;
+   outline: 0;    
+   -webkit-appearance: none;
+   width: 15px;
+   height: 15px;
+   border: none;
+    background-color: blue;
+   cursor: pointer;
+ }
+ .acCalcInputRange input[type="range"]::-moz-range-thumb{
+    pointer-events: all;
+    position: relative;
+    z-index: 10; 
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: blue;
+    cursor: pointer;
+}
+.acCalcInputRange input[type="range"]::-ms-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    outline: 0;    
+    -ms-appearance: none;
+    width: 28px;
+    height: 13px;
+    border: 0;
+    background-color: blue;
+    cursor: pointer;
 }
 .ac-price-twoInput{
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: auto 1fr auto;
     column-gap: 8px;
+    margin: auto 0;
 }
 
 
@@ -662,14 +714,32 @@ bottom: -1.5rem;
     position: relative;
     right: -7.5%;
 }
-.product-offer-img::before{
+
+/* remove css  */
+/* .product-offer-img::before{
     content: '35% off';
     position: absolute;
     color: var(--web-white-colore-code);
     font-size: 14px;
     left: 15%;
     top: 13%;
+} */
+/* added css  */
+.product_offer_discount{
+    color: white;
+    position: absolute;
+    left: 15%;
+    top: 13%;
+    font-size: 14px;
 }
+.sliderData{
+    display: none;
+}
+.sliderData.active{
+    display: block;
+}
+/* added css end  */
+
 .prod-star-img{
     position: relative;
     top: .7vh;
@@ -712,6 +782,10 @@ del span{
 .per-service-img{
     margin: 0 2rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .service-img-text{
     margin-top: 15px;
@@ -1047,6 +1121,7 @@ del span{
 
     display: flex;
     overflow: scroll;
+    margin: 0 2rem;
 }
 .prod-det-other{
     padding: 10px;
@@ -1850,6 +1925,9 @@ del span{
     .SliderCustomRelative{
         top: -2vmin;
     }
+    .other-product-of-prodDet{
+        margin: 0;
+    }
 }
 @media(max-width: 1200px){
     .container{
@@ -2089,6 +2167,7 @@ del span{
     /* services  */
     .services-images{
         grid-template-columns: repeat(2, auto);
+        
     }
     .services-images .per-service-img img{
         max-width: 85px;
